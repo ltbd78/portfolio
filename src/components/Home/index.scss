@@ -1,3 +1,34 @@
+@keyframes wiggle {
+    0%, 7% {
+        opacity: 1;
+        transform: rotateZ(0);
+    }
+    15% {
+        opacity: .5;
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        opacity: .5;
+        transform: rotateZ(10deg);
+    }
+    25% {
+        opacity: .5;
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        opacity: .5;
+        transform: rotateZ(6deg);
+    }
+    35% {
+        opacity: .5;
+        transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        opacity: 1;
+        transform: rotateZ(0);
+    }
+}
+
 .home-page {
     .text-zone {
         position: absolute;
@@ -37,10 +68,39 @@
         img {
             width: 65px;
             margin: 0px -19px -11px 0px;
-            opacity: 0;
             height: auto;
-            animation: rotateIn 1s linear both;
+            animation: wiggle 2s linear infinite;
             animation-delay: 1.4s;
+        }
+    }
+
+    h2 {
+        color: #8d8d8d;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    .flat-button {
+        color: #ffd700;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #ffd700;
+        margin-top: 25px;
+        float: left;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            background: #ffd700;
+            color: #333;
         }
     }
 }
