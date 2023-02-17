@@ -1,34 +1,42 @@
 @keyframes wiggle {
-    0%, 7% {
-        opacity: 1;
+    //https://blog.hubspot.com/website/css-animation-examples
+    0%, 10% {
+        opacity: 0;
         transform: rotateZ(0);
     }
     15% {
-        opacity: .5;
-        transform: rotateZ(-15deg);
+        opacity: 0.78;
+        transform: scale(1.5) rotateZ(-15deg);
     }
     20% {
-        opacity: .5;
-        transform: rotateZ(10deg);
+        opacity: 0.78;
+        transform: scale(1.5) rotateZ(10deg);
     }
     25% {
-        opacity: .5;
-        transform: rotateZ(-10deg);
+        opacity: 0.78;
+        transform: scale(1.5) rotateZ(-10deg);
     }
     30% {
-        opacity: .5;
-        transform: rotateZ(6deg);
+        opacity: 0.78;
+        transform: scale(1.5) rotateZ(6deg);
     }
     35% {
-        opacity: .5;
-        transform: rotateZ(-4deg);
+        opacity: 0.78;
+        transform: scale(1.5) rotateZ(-4deg);
     }
     40%, 100% {
         opacity: 1;
-        transform: rotateZ(0);
+        transform: scale(1.0) rotateZ(0);
     }
 }
-
+@keyframes glow {
+    0%, 100% {
+        opacity: .6
+    }
+    50% {
+        opacity: 1
+    }
+}
 .home-page {
     .text-zone {
         position: absolute;
@@ -53,6 +61,10 @@
             margin-top: -40px;
             left: 15px;
             opacity: 0.6;
+            animation-name: glow;
+            animation-delay: 2s;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
         &::after {
             content: '<h1/>';
@@ -62,15 +74,21 @@
             position: absolute;
             margin-top: 18px;
             margin-left: 20px;
-            animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
+            animation-name: glow;
+            animation-delay: 2s;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
         img {
             width: 65px;
-            margin: 0px -19px -11px 0px;
+            margin: 0px -19px -12px 0px;
             height: auto;
-            animation: wiggle 2s linear infinite;
-            animation-delay: 1.4s;
+            opacity: 0;
+            animation-name: wiggle;
+            animation-delay: 1.3s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
         }
     }
 
@@ -81,7 +99,11 @@
         font-size: 11px;
         font-family: sans-serif;
         letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-delay: 2s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
     }
 
     .flat-button {
@@ -95,7 +117,11 @@
         border: 1px solid #ffd700;
         margin-top: 25px;
         float: left;
-        animation: fadeIn 1s 1.8s backwards;
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-delay: 3s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
         white-space: nowrap;
 
         &:hover {
