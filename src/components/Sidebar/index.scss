@@ -1,98 +1,113 @@
 div .nav-bar {
-    background: #181818;
+  background: #181818;
+  width: 65px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+
+  img {
+    display: block;
+    margin: 2px auto;
     width: 65px;
-    height: 100%;
+    height: auto;
+
+    &.sub-logo {
+      width: 52px;
+    }
+  }
+
+  nav {
+    display: block;
     position: absolute;
-    top: 0;
-    z-index: 3;
-    min-height: 500px;
-    img {
-        display: block;
-        margin: 2px auto;
-        width: 65px;
-        height: auto;
-        &.sub-logo {
-            width: 52px;
+    text-align: center;
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+
+    a {
+      display: block;
+      position: relative;
+      font-size: 26px;
+      color: #4d4d4e;
+      line-height: 52px;
+      height: 52px;
+      text-decoration: none;
+
+      &:hover {
+        color: #ffd700;
+
+        svg {
+          opacity: 0;
         }
-    }
-    nav {
+
+        &::after {
+          opacity: 1;
+        }
+      }
+
+      &::after {
+        content: "";
         display: block;
         position: absolute;
+        font-size: 10px;
+        letter-spacing: 2px;
+        bottom: 0;
+        width: 100%;
         text-align: center;
-        height: 210px;
-        top: 50%;
-        margin-top: -120px;
-        width: 100%;
-        a {
-            display: block;
-            position: relative;
-            font-size: 26px;
-            color: #4d4d4e;
-            line-height: 52px;
-            height: 52px;
-            text-decoration: none;
-            &:hover {
-                color: #ffd700;
-                svg {
-                    opacity: 0;
-                }
-                &::after {
-                    opacity: 1;
-                }
-            }
-            &::after {
-                content: '';
-                display: block;
-                position: absolute;
-                font-size: 10px;
-                letter-spacing: 2px;
-                bottom: 0;
-                width: 100%;
-                text-align: center;
-                opacity: 0;
-                transition: all 0.3s ease-out;
-            }
-        }
-        a.home-link {
-            &::after {
-                content: 'HOME';
-            }
-        }
-        a.about-link {
-            &::after {
-                content: 'ABOUT';
-            }
-        }
-        a.contact-link {
-            &::after {
-                content: 'CONTACT';
-            }
-        }
-        a.active {
-            svg {
-                color: #ffd700;
-            }
-        }
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
     }
-    ul {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
+
+    a.home-link {
+      &::after {
+        content: "HOME";
+      }
+    }
+
+    a.about-link {
+      &::after {
+        content: "ABOUT";
+      }
+    }
+
+    a.contact-link {
+      &::after {
+        content: "CONTACT";
+      }
+    }
+
+    a.active {
+      svg {
+        color: #ffd700;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
         display: block;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin: 0;
-        li {
-            a {
-                padding: 7px 0;
-                display: block;
-                font-size: 26px;
-                line-height: 26px;
-            }
-            &:hover svg {
-                color: #ffd700
-            }
-        }
+        font-size: 26px;
+        line-height: 26px;
+      }
+
+      &:hover svg {
+        color: #ffd700;
+      }
     }
+  }
 }

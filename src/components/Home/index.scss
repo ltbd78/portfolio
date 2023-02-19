@@ -1,132 +1,148 @@
 @keyframes wiggle {
-    //https://blog.hubspot.com/website/css-animation-examples
-    0%, 10% {
-        opacity: 0;
-        transform: rotateZ(0);
-    }
-    15% {
-        opacity: 0.78;
-        transform: scale(1.5) rotateZ(-15deg);
-    }
-    20% {
-        opacity: 0.78;
-        transform: scale(1.5) rotateZ(10deg);
-    }
-    25% {
-        opacity: 0.78;
-        transform: scale(1.5) rotateZ(-10deg);
-    }
-    30% {
-        opacity: 0.78;
-        transform: scale(1.5) rotateZ(6deg);
-    }
-    35% {
-        opacity: 0.78;
-        transform: scale(1.5) rotateZ(-4deg);
-    }
-    40%, 100% {
-        opacity: 1;
-        transform: scale(1.0) rotateZ(0);
-    }
+  //https://blog.hubspot.com/website/css-animation-examples
+  0%,
+  10% {
+    opacity: 0;
+    transform: rotateZ(0);
+  }
+
+  15% {
+    opacity: 0.78;
+    transform: scale(1.5) rotateZ(-15deg);
+  }
+
+  20% {
+    opacity: 0.78;
+    transform: scale(1.5) rotateZ(10deg);
+  }
+
+  25% {
+    opacity: 0.78;
+    transform: scale(1.5) rotateZ(-10deg);
+  }
+
+  30% {
+    opacity: 0.78;
+    transform: scale(1.5) rotateZ(6deg);
+  }
+
+  35% {
+    opacity: 0.78;
+    transform: scale(1.5) rotateZ(-4deg);
+  }
+
+  40%,
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateZ(0);
+  }
 }
+
 @keyframes glow {
-    0%, 100% {
-        opacity: .6
-    }
-    50% {
-        opacity: 1
-    }
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
+
 .home-page {
-    .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
-    }
-    h1 {
-        color: #fff;
-        font-size: 53px;
-        margin: 0;
-        font-family: 'Coolvetica';
-        font-weight: 400;
-        &::before {
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: #ffd700;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -40px;
-            left: 15px;
-            opacity: 0.6;
-            animation-name: glow;
-            animation-delay: 2s;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-        }
-        &::after {
-            content: '<h1/>';
-            font-family: 'La Belle Aurore';
-            color: #ffd700;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
-            opacity: 0.6;
-            animation-name: glow;
-            animation-delay: 2s;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-        }
-        img {
-            width: 65px;
-            margin: 0px -19px -12px 0px;
-            height: auto;
-            opacity: 0;
-            animation-name: wiggle;
-            animation-delay: 1.3s;
-            animation-duration: 2s;
-            animation-fill-mode: forwards;
-        }
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 53px;
+    margin: 0;
+    font-family: "Coolvetica";
+    font-weight: 400;
+
+    &::before {
+      content: "<h1>";
+      font-family: "La Belle Aurore";
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -40px;
+      left: 15px;
+      opacity: 0.6;
+      animation-name: glow;
+      animation-delay: 2s;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
     }
 
-    h2 {
-        color: #8d8d8d;
-        margin-top: 20px;
-        font-weight: 400;
-        font-size: 11px;
-        font-family: sans-serif;
-        letter-spacing: 3px;
-        opacity: 0;
-        animation-name: fadeIn;
-        animation-delay: 2s;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
+    &::after {
+      content: "<h1/>";
+      font-family: "La Belle Aurore";
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 20px;
+      opacity: 0.6;
+      animation-name: glow;
+      animation-delay: 2s;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
     }
 
-    .flat-button {
-        color: #ffd700;
-        font-size: 13px;
-        font-weight: 400;
-        letter-spacing: 4px;
-        font-family: sans-serif;
-        text-decoration: none;
-        padding: 10px 18px;
-        border: 1px solid #ffd700;
-        margin-top: 25px;
-        float: left;
-        opacity: 0;
-        animation-name: fadeIn;
-        animation-delay: 3s;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-        white-space: nowrap;
-
-        &:hover {
-            background: #ffd700;
-            color: #333;
-        }
+    img {
+      width: 65px;
+      margin: 0px -19px -12px 0px;
+      height: auto;
+      opacity: 0;
+      animation-name: wiggle;
+      animation-delay: 1.3s;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
     }
+  }
+
+  h2 {
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  .flat-button {
+    color: #ffd700;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    margin-top: 25px;
+    float: left;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
+  }
 }
