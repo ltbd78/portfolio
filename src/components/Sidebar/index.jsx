@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-function Sidebar() {
+export default function Sidebar() {
   return (
     <div className="nav-bar">
       <img src={LogoL} alt="logo" />
@@ -37,5 +37,3 @@ function Sidebar() {
     </div>
   );
 }
-
-export default Sidebar;
