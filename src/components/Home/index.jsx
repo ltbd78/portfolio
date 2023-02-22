@@ -2,11 +2,11 @@ import LogoTitle from "../../assets/images/logo-l.png";
 import { Link } from "react-router-dom";
 import "./index.scss";
 import AnimatedLetters from "../AnimatedLetters";
+import Logo from "./Logo";
 import { useState, useEffect } from "react";
 
 export default function Home() {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const [effectFinished, setEffectFinished] = useState(false);
   const str_hi = "Hi,".split("");
   const str_im = "I'm".split("");
   const str_insuhan = "insu Han".split("");
@@ -36,6 +36,7 @@ export default function Home() {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   );
 }
