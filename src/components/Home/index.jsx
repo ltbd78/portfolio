@@ -2,7 +2,6 @@ import LogoTitle from "../../assets/images/logo-l.png";
 import { Link } from "react-router-dom";
 import "./index.scss";
 import AnimatedLetters from "../AnimatedLetters";
-import Logo from "./Logo";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -20,7 +19,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container home-page">
+    <div className="home-page">
       <div className="text-zone">
         <h1>
           <AnimatedLetters letterClass={letterClass} strArray={str_hi} delay={10} />
@@ -36,7 +35,6 @@ export default function Home() {
           CONTACT ME
         </Link>
       </div>
-      <Logo />
     </div>
   );
 }
