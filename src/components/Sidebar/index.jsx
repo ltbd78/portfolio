@@ -1,10 +1,10 @@
-import { NavLink } from "react-router-dom";
 import "./index.scss";
-import LogoL from "../../assets/images/logo-l.png";
-import LogoSubtitle from "../../assets/images/logo_sub2.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NavLink } from "react-router-dom";
+import LogoL from "../../assets/images/logo-l.png";
+import LogoSubtitle from "../../assets/images/logo_sub2.png";
 
 export default function Sidebar() {
   return (
