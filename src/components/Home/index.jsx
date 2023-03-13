@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="home-page">
+    <div className="container home-page">
       <div className="text-zone">
         <h1>
           <AnimatedLetters letterClass={letterClass} strArray={str_hi} delay={10} />

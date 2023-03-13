@@ -1,9 +1,9 @@
+import "./index.scss";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
 
 // https://github.com/bobangajicsm/react-portfolio-website
 
