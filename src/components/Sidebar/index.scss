@@ -2,95 +2,78 @@
 
 div .nav-bar {
   background: $nav-bar-color;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  min-height: 500px;
+  justify-content: space-between;
+  min-height: 500px; /* TODO: set to scrollable height */
   position: absolute;
-  top: 0;
   width: 65px;
-  z-index: 2;
-  img {
-    display: block;
-    height: auto;
-    margin: 2px auto;
-    width: 65px;
-    &.sub-logo {
-      width: 52px;
+  z-index: 1; /* needed so .nav-bar is on top .page */
+  .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 100%;
+      &.sub-logo {
+        width: 52px;
+      }
     }
   }
   nav {
-    display: block;
-    height: 210px;
-    margin-top: -120px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     a {
-      color: #4d4d4e;
       display: block;
       font-size: 26px;
       height: 52px;
       line-height: 52px;
       position: relative;
-      text-decoration: none;
-      &:hover {
+      .link-text {
+        align-items: center;
+        bottom: 0;
         color: $accent-color;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        letter-spacing: 1px;
+        opacity: 0;
+        position: absolute;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+        transition-property: all;
+        transition-timing-function: ease-out;
+        width: 100%;
+      }
+      &.active {
+        svg {
+          color: $accent-color;
+        }
+      }
+      &:hover {
         svg {
           opacity: 0;
         }
-        &::after {
+        .link-text {
           opacity: 1;
         }
-      }
-      &::after {
-        bottom: 0;
-        content: "";
-        display: block;
-        font-size: 10px;
-        letter-spacing: 2px;
-        opacity: 0;
-        position: absolute;
-        text-align: center;
-        transition: all 0.3s ease-out;
-        width: 100%;
-      }
-    }
-    a.home-link {
-      &::after {
-        content: "HOME";
-      }
-    }
-    a.about-link {
-      &::after {
-        content: "ABOUT";
-      }
-    }
-    a.contact-link {
-      &::after {
-        content: "CONTACT";
-      }
-    }
-    a.active {
-      svg {
-        color: $accent-color;
       }
     }
   }
   ul {
-    bottom: 20px;
-    display: block;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    text-align: center;
-    width: 100%;
+    padding: 0; /* user agent default to 40 */
     li {
       a {
         display: block;
         font-size: 26px;
-        line-height: 26px;
-        padding: 7px 0;
+        height: 52px;
+        line-height: 52px;
       }
       &:hover svg {
         color: $accent-color;

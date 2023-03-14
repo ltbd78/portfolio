@@ -9,17 +9,22 @@ import LogoSubtitle from "../../assets/images/logo_sub2.png";
 export default function Sidebar() {
   return (
     <div className="nav-bar">
-      <img src={LogoL} alt="logo" />
-      <img className="sub-logo" src={LogoSubtitle} alt="linsu" />
+      <div className="logo">
+        <img src={LogoL} alt="logo" />
+        <img className="sub-logo" src={LogoSubtitle} alt="sub-logo" />
+      </div>
       <nav>
         <NavLink exact="true" activeclassname="active" className="home-link" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+          <span className="link-text">HOME</span>
         </NavLink>
         <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+          <span className="link-text">ABOUT</span>
         </NavLink>
         <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+          <span className="link-text">CONTACT</span>
         </NavLink>
       </nav>
       <ul>
