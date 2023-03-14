@@ -10,9 +10,9 @@
   width: 100%;
 }
 .horizontal-bar {
-  display: flex;
   align-items: center;
   background-color: $background-color;
+  display: flex;
   height: 65px;
   left: 65px;
   opacity: 1;
@@ -39,6 +39,10 @@ footer {
   bottom: 0px;
 }
 article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
   animation-delay: 1s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -49,5 +53,5 @@ article {
   opacity: 0;
   transform-style: preserve-3d;
   width: 100%;
-  z-index: -1;
+  z-index: 0; /* must be at least 0 to interact with elements */
 }

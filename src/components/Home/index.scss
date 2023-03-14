@@ -1,48 +1,8 @@
 @import "../../variables.scss";
 
 .home-page {
-  .text-zone {
-    left: 10%;
-    max-height: 90%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40%;
-  }
   h1 {
-    color: $foreground-color;
-    font-family: "Coolvetica";
-    font-size: 53px;
-    font-weight: 400;
     margin: 0;
-    &::before {
-      animation-delay: 2s;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-name: glow;
-      color: $accent-color;
-      content: "<h1>";
-      font-family: "La Belle Aurore";
-      font-size: 18px;
-      left: 15px;
-      margin-top: -40px;
-      opacity: 0.6;
-      position: absolute;
-    }
-    &::after {
-      animation-delay: 2s;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-name: glow;
-      color: $accent-color;
-      content: "<h1/>";
-      font-family: "La Belle Aurore";
-      font-size: 18px;
-      margin-left: 20px;
-      margin-top: 18px;
-      opacity: 0.6;
-      position: absolute;
-    }
     img {
       animation-delay: 1.3s;
       animation-duration: 2s;
@@ -55,20 +15,14 @@
     }
   }
   h2 {
-    animation-delay: 2s;
+    animation-delay: 2.3s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-name: fadeIn;
-    color: $secondary-color;
-    font-family: sans-serif;
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 3px;
-    margin-top: 20px;
     opacity: 0;
   }
-  .flat-button {
-    animation-delay: 3s;
+  .contact-button {
+    animation-delay: 3.3s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-name: fadeIn;
@@ -80,6 +34,7 @@
     font-weight: 400;
     letter-spacing: 4px;
     margin-top: 25px;
+    max-width: fit-content;
     opacity: 0;
     padding: 10px 18px;
     text-decoration: none;

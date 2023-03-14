@@ -21,21 +21,19 @@ export default function Home() {
 
   return (
     <article className="home-page">
-      <div className="text-zone">
-        <h1>
-          <AnimatedLetters letterClass={letterClass} strArray={str_hi} delay={10} />
-          <br />
-          <AnimatedLetters letterClass={letterClass} strArray={str_im} delay={13} />
-          <img src={LogoTitle} alt="logo" />
-          <AnimatedLetters letterClass={letterClass} strArray={str_insuhan} delay={16} />
-          <br />
-          <AnimatedLetters letterClass={letterClass} strArray={str_datascientist} delay={24} />
-        </h1>
-        <h2>Machine Learning Engineer / Statistician / TikToker</h2>
-        <Link to="/contact" className="flat-button">
-          CONTACT ME
-        </Link>
-      </div>
+      <h1>
+        <AnimatedLetters letterClass={letterClass} strArray={str_hi} delay={10} />
+        <br />
+        <AnimatedLetters letterClass={letterClass} strArray={str_im} delay={13} />
+        <img src={LogoTitle} alt="logo" />
+        <AnimatedLetters letterClass={letterClass} strArray={str_insuhan} delay={16} />
+        <br />
+        <AnimatedLetters letterClass={letterClass} strArray={str_datascientist} delay={24} />
+      </h1>
+      <h2>Machine Learning Engineer / Statistician / TikToker</h2>
+      <Link to="/contact" className="contact-button">
+        CONTACT ME
+      </Link>
     </article>
   );
 }
