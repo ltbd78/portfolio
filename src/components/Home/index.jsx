@@ -11,7 +11,8 @@ export default function Home() {
   const str_insuhan = "insu Han".split("");
   const str_datascientist = "Data Scientist".split("");
 
-  useEffect(() => { /* TODO: how to continue animation after hover */
+  useEffect(() => {
+    /* TODO: how to continue animation after hover */
     const timer = setTimeout(() => {
       setLetterClass("text-animate-hover");
     }, 4000);
