@@ -1,6 +1,6 @@
 import "./index.scss";
-import AnimatedLetters from "../AnimatedLetters";
 import { useState, useEffect } from "react";
+import AnimatedLetters from "../AnimatedLetters";
 
 export default function About() {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -11,7 +11,7 @@ export default function About() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="container about-page">
+    <article className="about-page">
       <div className="text-zone">
         <h1>
           <AnimatedLetters letterClass={letterClass} strArray={"About Me".split("")} delay={15} />
@@ -20,6 +20,6 @@ export default function About() {
         <p>Paragraph 2</p>
         <p>Paragraph 3</p>
       </div>
-    </div>
+    </article>
   );
 }

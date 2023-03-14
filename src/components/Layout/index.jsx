@@ -7,17 +7,21 @@ export default function Layout() {
     <div className="App">
       <Sidebar />
       <div className="page">
-        <div className="tags top-tags">
-          &lt;html&gt;
-          <br />
-          &nbsp;&nbsp;&lt;body&gt;
-        </div>
+        <header className="horizontal-bar">
+          <div className="tags">
+            &lt;html&gt;
+            <br />
+            &nbsp;&nbsp;&lt;body&gt;
+          </div>
+        </header>
         <Outlet />
-        <div className="tags bottom-tags">
-          &nbsp;&nbsp;&lt;/body&gt;
-          <br />
-          &lt;/html&gt;
-        </div>
+        <footer className="horizontal-bar">
+          <div className="tags">
+            &nbsp;&nbsp;&lt;/body&gt;
+            <br />
+            &lt;/html&gt;
+          </div>
+        </footer>
       </div>
     </div>
   );

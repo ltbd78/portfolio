@@ -1,37 +1,53 @@
 @import "../../variables.scss";
 
 .page {
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  justify-content: space-around;
+  left: 65px;
   position: absolute;
   width: 100%;
 }
+.horizontal-bar {
+  display: flex;
+  align-items: center;
+  background-color: $background-color;
+  height: 65px;
+  left: 65px;
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 .tags {
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: glow;
+  animation-timing-function: ease-in-out;
   color: $accent-color;
   font-family: "La Belle Aurore";
   font-size: 18px;
-  left: 65px;
-  margin: 13px;
+  margin-left: 13px;
   opacity: 0.5;
-  position: fixed;
-  width: 100%;
-  &.top-tags {
-    top: 0px;
-  }
-  &.bottom-tags {
-    bottom: 0px;
-  }
 }
-.container {
+header {
+  top: 0px;
+}
+footer {
+  bottom: 0px;
+}
+article {
   animation-delay: 1s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-name: fadeIn;
-  height: 90%;
+  background-color: $background-color;
   margin: 0 auto;
   min-height: 500px;
   opacity: 0;
-  position: absolute;
-  top: 5%;
   transform-style: preserve-3d;
   width: 100%;
+  z-index: -1;
 }

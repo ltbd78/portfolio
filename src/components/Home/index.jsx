@@ -11,7 +11,7 @@ export default function Home() {
   const str_insuhan = "insu Han".split("");
   const str_datascientist = "Data Scientist".split("");
 
-  useEffect(() => {
+  useEffect(() => { /* TODO: how to continue animation after hover */
     const timer = setTimeout(() => {
       setLetterClass("text-animate-hover");
     }, 4000);
@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container home-page">
+    <article className="home-page">
       <div className="text-zone">
         <h1>
           <AnimatedLetters letterClass={letterClass} strArray={str_hi} delay={10} />
@@ -35,6 +35,6 @@ export default function Home() {
           CONTACT ME
         </Link>
       </div>
-    </div>
+    </article>
   );
 }
