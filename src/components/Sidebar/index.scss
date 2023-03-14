@@ -6,7 +6,7 @@ div .nav-bar {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
-  min-height: 500px; /* TODO: set to scrollable height */
+  min-height: $min-height;
   position: absolute;
   width: 65px;
   z-index: 100; /* in case when .nav-bar gets covered by .page */

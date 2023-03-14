@@ -39,18 +39,17 @@ footer {
   bottom: 0px;
 }
 article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 5%;
   animation-delay: 1s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-name: fadeIn;
   background-color: $background-color;
-  margin: 0 auto;
-  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: $min-height;
   opacity: 0;
+  padding-left: 39px;
   transform-style: preserve-3d;
   width: 100%;
   z-index: 0; /* must be at least 0 to interact with elements */
