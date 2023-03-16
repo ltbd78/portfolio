@@ -4,11 +4,9 @@ div .nav-bar {
   background: $nav-bar-color;
   display: flex;
   flex-direction: column;
+  grid-area: nav;
   height: 100%;
   justify-content: space-between;
-  min-height: $min-height;
-  position: absolute;
-  width: 65px;
   z-index: 100; /* in case when .nav-bar gets covered by .page */
   .logo {
     display: flex;

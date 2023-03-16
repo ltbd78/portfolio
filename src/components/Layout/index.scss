@@ -1,51 +1,46 @@
 @import "../../variables.scss";
 
 .page {
+  grid-area: page;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-around;
-  left: 65px;
-  position: absolute;
   width: 100%;
-}
-.horizontal-bar {
-  align-items: center;
-  background-color: $background-color;
-  display: flex;
-  height: 65px;
-  left: 65px;
-  opacity: 1;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-.tags {
-  animation-delay: 3s;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-name: glow;
-  animation-timing-function: ease-in-out;
-  color: $accent-color;
-  font-family: "La Belle Aurore";
-  font-size: 18px;
-  margin-left: 13px;
-  opacity: 0.5;
-}
-header {
-  top: 0px;
-}
-footer {
-  bottom: 0px;
-}
-article {
-  background-color: $background-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: $min-height;
-  padding-left: 39px;
-  transform-style: preserve-3d;
-  width: 100%;
-  z-index: 0; /* must be at least 0 to interact with elements */
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 39px;
+    transform-style: preserve-3d;
+    width: 100%;
+    z-index: 0; /* must be at least 0 to interact with elements */
+  }  
+  .horizontal-bar {
+    align-items: center;
+    display: flex;
+    height: 65px;
+    left: 65px;
+    opacity: 1;
+    width: 100%;
+    z-index: 1;
+  }
+  .tags {
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: glow;
+    animation-timing-function: ease-in-out;
+    color: $accent-color;
+    font-family: "La Belle Aurore";
+    font-size: 18px;
+    margin-left: 13px;
+    opacity: 0.5;
+  }
+  header {
+    top: 0px;
+  }
+  footer {
+    bottom: 0px;
+  }
 }
