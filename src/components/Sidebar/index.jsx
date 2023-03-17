@@ -4,7 +4,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import LogoL from "../../assets/images/logo-l.png";
-import LogoSubtitle from "../../assets/images/logo_sub2.png";
+import LogoSubtitle from "../../assets/images/logo_sub.png";
 
 export default function Sidebar() {
   return (
