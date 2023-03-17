@@ -1,11 +1,11 @@
 @import "../../variables.scss";
 
 .page {
-  grid-area: page;
   display: flex;
   flex-direction: column;
+  grid-area: page;
   height: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   article {
     display: flex;
@@ -24,23 +24,17 @@
     opacity: 1;
     width: 100%;
     z-index: 1;
-  }
-  .tags {
-    animation-delay: 3s;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-name: glow;
-    animation-timing-function: ease-in-out;
-    color: $accent-color;
-    font-family: "La Belle Aurore";
-    font-size: 18px;
-    margin-left: 13px;
-    opacity: 0.5;
-  }
-  header {
-    top: 0px;
-  }
-  footer {
-    bottom: 0px;
+    .tags {
+      animation-delay: 3s;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-name: glow;
+      animation-timing-function: ease-in-out;
+      color: $accent-color;
+      font-family: "La Belle Aurore";
+      font-size: 18px;
+      margin-left: 13px;
+      opacity: 0.5;
+    }
   }
 }
