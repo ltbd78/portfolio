@@ -8,6 +8,9 @@ div .nav-bar {
   height: 100%;
   justify-content: space-between;
   z-index: 100; /* in case when .nav-bar gets covered by .page */
+  svg {
+    color: $secondary-color;
+  }
   .logo {
     display: flex;
     flex-direction: column;

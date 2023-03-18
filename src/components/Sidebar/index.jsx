@@ -15,27 +15,27 @@ export default function Sidebar() {
       </div>
       <nav>
         <NavLink exact="true" activeclassname="active" className="home-link" to="/">
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faHome} />
           <span className="link-text">HOME</span>
         </NavLink>
         <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faUser} />
           <span className="link-text">ABOUT</span>
         </NavLink>
         <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faEnvelope} />
           <span className="link-text">CONTACT</span>
         </NavLink>
       </nav>
       <ul>
         <li>
           <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/linsuhan/">
-            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
         <li>
           <a target="_blank" rel="noreferrer" href="https://www.github.com/ltbd78/">
-            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
       </ul>
