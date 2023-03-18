@@ -1,6 +1,6 @@
 import "./index.scss";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import LogoTitle from "../../assets/images/logo-l.png";
 
