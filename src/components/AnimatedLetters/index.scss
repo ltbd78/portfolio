@@ -1,14 +1,14 @@
 @import "../../variables.scss";
 
-.text-animate {
+.initial-animation {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-name: bounceIn;
-  display: inline-block;
-  min-width: 10px;
+  display: inline-block; /* default `display: inline` has limited animation properties */
+  min-width: 10px; /* whitespace character has 0 width for inline-block */
   opacity: 0;
 }
-.text-animate-hover {
+.hover-animation {
   animation-fill-mode: both;
   display: inline-block;
   min-width: 10px;
@@ -19,7 +19,7 @@
   }
 }
 @for $i from 1 through 100 {
-  .text-animate.delay#{$i} {
+  .initial-animation.delay#{$i} {
     animation-delay: #{calc($i / 10)}s;
   }
 }

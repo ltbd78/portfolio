@@ -1,13 +1,13 @@
 import "./index.scss";
 
-export default function AnimatedLetters({ letterClass, strArray, delay }) {
+export default function AnimatedLetters({ animationClass, strArray, delay }) {
   // TODO: refactor variable names
-  function renderChar(char, i) {
+  function animateLetter(char, i) {
     return (
-      <span key={char + i} className={`${letterClass} delay${i + delay}`}>
+      <span key={char + i} className={`letter ${animationClass} delay${i + delay}`}>
         {char}
       </span>
     );
   }
-  return <span>{strArray.map(renderChar)}</span>;
+  return <span>{strArray.map(animateLetter)}</span>;
 }
