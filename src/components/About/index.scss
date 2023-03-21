@@ -3,7 +3,10 @@
 .about-page {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
   .text-container {
+    flex-basis: 50%;
     p {
       animation-duration: 1s, 1s;
       animation-fill-mode: forwards, forwards;
@@ -29,5 +32,45 @@
     }
   }
   .cube-container {
+    flex-basis: 50%;
+    .cube {
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+      animation-name: spincube;
+      animation-timing-function: ease-in-out;
+      transform-origin: 100px 100px 0;
+      transform-style: preserve-3d;
+      div {
+        align-items: center;
+        background: rgba(255, 255, 255, 0.4);
+        border: 1px solid #ccc;
+        box-shadow: 0 0 20px 0px lightyellow;
+        display: flex;
+        font-size: 100px;
+        height: 200px;
+        justify-content: center;
+        position: absolute;
+        text-align: center;
+        width: 200px;
+      }
+      .face1 {
+        transform: translateZ(100px);
+      }
+      .face2 {
+        transform: rotateY(90deg) translateZ(100px);
+      }
+      .face3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+      }
+      .face4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+      }
+      .face5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+      }
+      .face6 {
+        transform: rotateX(-90deg) translateZ(100px);
+      }
+    }
   }
 }

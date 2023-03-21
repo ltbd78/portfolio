@@ -58,3 +58,22 @@ $secondary-color: #8d8d8d;
     opacity: 1;
   }
 }
+
+@keyframes spincube {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  33% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
+}
