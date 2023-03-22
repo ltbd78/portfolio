@@ -34,22 +34,22 @@ export default function About() {
       </div>
       <div className="cube-container">
         <div className="cube">
-          <div className="face1">
+          <div className="front-face">
             <FontAwesomeIcon icon={faPython} />
           </div>
-          <div className="face2">
+          <div className="back-face">
             <FontAwesomeIcon icon={faReact} />
           </div>
-          <div className="face3">
+          <div className="left-face">
             <FontAwesomeIcon icon={faGitAlt} />
           </div>
-          <div className="face4">
+          <div className="right-face">
             <FontAwesomeIcon icon={faHtml5} />
           </div>
-          <div className="face5">
+          <div className="top-face">
             <FontAwesomeIcon icon={faCss3} />
           </div>
-          <div className="face6">
+          <div className="bottom-face">
             <FontAwesomeIcon icon={faJsSquare} />
           </div>
         </div>
