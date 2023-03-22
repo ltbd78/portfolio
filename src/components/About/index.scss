@@ -84,6 +84,7 @@ $cube-size: 200px;
   }
 }
 @keyframes spincube {
+  /* TODO: figure out why deg is negative of original transformations */
   0%,
   100% {
     transform: rotate3d(1, 1, 1, 0deg); /* front */
