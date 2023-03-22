@@ -2,6 +2,7 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
+import Loader from "react-loaders";
 import LogoTitle from "../../assets/images/logo-l.png";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
 
   return (
     <article className="home-page">
+      <Loader type="ball-beat" />
       <h1>
         <AnimatedLetters animationClass={animationClass} strArray={str_hi} delay={10} />
         <br />

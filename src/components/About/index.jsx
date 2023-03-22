@@ -1,14 +1,16 @@
 import "./index.scss";
+import { faCss3, faGitAlt, faHtml5, faJsSquare, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCss3, faGitAlt, faHtml5, faJsSquare, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
+import Loader from "react-loaders";
 
 export default function About() {
   const [animationClass, setAnimationClass] = useState("initial-animation");
   setTimeout(() => setAnimationClass("hover-animation"), 2000);
   return (
     <article className="about-page">
+      <Loader type="ball-beat" />
       <div className="heading">
         <h1>
           <AnimatedLetters animationClass={animationClass} strArray={"About Me".split("")} delay={10} />
