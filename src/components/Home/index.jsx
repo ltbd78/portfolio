@@ -15,21 +15,23 @@ export default function Home() {
   setTimeout(() => setAnimationClass("hover-animation"), 4000);
 
   return (
-    <article className="home-page">
+    <>
       <Loader type="ball-beat" />
-      <h1>
-        <AnimatedLetters animationClass={animationClass} strArray={str_hi} delay={10} />
-        <br />
-        <AnimatedLetters animationClass={animationClass} strArray={str_im} delay={13} />
-        <img src={LogoTitle} alt="logo" />
-        <AnimatedLetters animationClass={animationClass} strArray={str_insuhan} delay={16} />
-        <br />
-        <AnimatedLetters animationClass={animationClass} strArray={str_datascientist} delay={24} />
-      </h1>
-      <h2>Machine Learning Engineer / Statistician / TikToker</h2>
-      <Link to="/contact" className="contact-button">
-        CONTACT ME
-      </Link>
-    </article>
+      <article className="home-page">
+        <h1>
+          <AnimatedLetters animationClass={animationClass} strArray={str_hi} delay={10} />
+          <br />
+          <AnimatedLetters animationClass={animationClass} strArray={str_im} delay={13} />
+          <img src={LogoTitle} alt="logo" />
+          <AnimatedLetters animationClass={animationClass} strArray={str_insuhan} delay={16} />
+          <br />
+          <AnimatedLetters animationClass={animationClass} strArray={str_datascientist} delay={24} />
+        </h1>
+        <h2>Machine Learning Engineer / Statistician / TikToker</h2>
+        <Link to="/contact" className="contact-button">
+          CONTACT ME
+        </Link>
+      </article>
+    </>
   );
 }
