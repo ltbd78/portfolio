@@ -1,6 +1,11 @@
 @import "../../variables.scss";
 
-.home-page {
+article.home-page {
+  display: flex;
+  flex-direction: column;
+  padding-left: 39px;
+  width: 100%;
+  z-index: 0; /* must be at least 0 to be above parent containers */
   h1 {
     margin: 0;
     img {
