@@ -28,14 +28,14 @@
     "gh-pages": "^5.0.0"
   },
   "scripts": {
-    "start": "react-scripts start --entry ./src/index.jsx",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "prettier": "npx prettier --write .",
-    "predeploy": "npm run build",
+    "build": "react-scripts build --entry ./src/index.jsx",
     "deploy": "npx gh-pages -d build",
-    "serve": "npx serve -s build"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "prettier": "npx prettier --write .",
+    "serve": "npx serve -s build",
+    "start": "react-scripts start --entry ./src/index.jsx",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
