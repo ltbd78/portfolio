@@ -1,0 +1,7 @@
+sort package.json
+dev dependencies
+- prettier
+- serve
+delete
+- loaders.css
+- find unused packages (npm check unused)
