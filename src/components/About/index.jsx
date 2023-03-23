@@ -1,6 +1,6 @@
 import "./index.scss";
-import { faCss3, faGitAlt, faHtml5, faJsSquare, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCss3, faGitAlt, faHtml5, faJsSquare, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import Loader from "react-loaders";
@@ -19,22 +19,22 @@ export default function About() {
           <div className="cube-container">
             <div className="cube">
               <div className="front-face">
-                <FontAwesomeIcon icon={faPython} />
+                {/* <FontAwesomeIcon icon={faPython} /> */}
               </div>
               <div className="back-face">
-                <FontAwesomeIcon icon={faReact} />
+                {/* <FontAwesomeIcon icon={faReact} /> */}
               </div>
               <div className="left-face">
-                <FontAwesomeIcon icon={faGitAlt} />
+                {/* <FontAwesomeIcon icon={faGitAlt} /> */}
               </div>
               <div className="right-face">
-                <FontAwesomeIcon icon={faHtml5} />
+                {/* <FontAwesomeIcon icon={faHtml5} /> */}
               </div>
               <div className="top-face">
-                <FontAwesomeIcon icon={faCss3} />
+                {/* <FontAwesomeIcon icon={faCss3} /> */}
               </div>
               <div className="bottom-face">
-                <FontAwesomeIcon icon={faJsSquare} />
+                {/* <FontAwesomeIcon icon={faJsSquare} /> */}
               </div>
             </div>
           </div>
