@@ -1,5 +1,4 @@
 import "./index.scss";
-import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -8,9 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.REACT_APP_URI}>
-      <App />
-    </BrowserRouter>
+    <App />
   </React.StrictMode>
 );
 

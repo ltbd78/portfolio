@@ -14,15 +14,15 @@ export default function Sidebar() {
         <img className="sub-logo" src={LogoSubtitle} alt="sub-logo" />
       </div>
       <nav>
-        <NavLink exact="true" activeclassname="active" className="home-link" to="/">
+        <NavLink exact activeClassName="active" className="home-link" to="">
           <FontAwesomeIcon icon={faHome} />
           <span className="link-text">HOME</span>
         </NavLink>
-        <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+        <NavLink exact activeClassName="active" className="about-link" to="about">
           <FontAwesomeIcon icon={faUser} />
           <span className="link-text">ABOUT</span>
         </NavLink>
-        <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+        <NavLink exact activeClassName="active" className="contact-link" to="contact">
           <FontAwesomeIcon icon={faEnvelope} />
           <span className="link-text">CONTACT</span>
         </NavLink>
