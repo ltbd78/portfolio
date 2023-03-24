@@ -1,6 +1,6 @@
 import "./index.scss";
 import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import LogoL from "../../assets/images/logo-l.png";
@@ -36,6 +36,16 @@ export default function Sidebar() {
         <li>
           <a target="_blank" rel="noreferrer" href="https://www.github.com/ltbd78/">
             <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/ltbd78/">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@linsuhan/">
+            <FontAwesomeIcon icon={faTiktok} />
           </a>
         </li>
       </ul>
