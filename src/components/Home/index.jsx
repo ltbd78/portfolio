@@ -27,7 +27,7 @@ export default function Home() {
           <br />
           <AnimatedLetters animationClass={animationClass} strArray={str_datascientist} delay={24} />
         </h1>
-        <h2>Machine Learning Engineer / Statistician / TikToker</h2>
+        <h2>Machine Learning Engineer / Statistician</h2>
         <Link to="/contact" className="contact-button">
           CONTACT ME
         </Link>

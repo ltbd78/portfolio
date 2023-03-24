@@ -40,21 +40,20 @@ export default function About() {
           </div>
         </div>
         <p>
-          Hi, I'm a data scientist currently living in NYC. I was born in Beijing, China and moved to the United States when I was three years old. Growing
-          up in the US, I've had the privilege of experiencing the best of both worlds, Chinese and American cultures. I obtained my Bachelor's degree in
-          Mathematics and Statistics from Purdue University and later pursued a Master's degree in Statistics from Columbia University.
+          Hello, I'm a data scientist currently living in NYC. I was born in Beijing, China, but flew to America when I was just three years old. My passion
+          for numbers and patterns led me to study math and statistics for my bachelor's degree at Purdue University. After that, I pursued my master's
+          degree in statistics at Columbia University, which paved the way for my career in data science.
         </p>
         <p>
-          My previous job was as a machine learning engineer in Boston, where I focused on deep learning research. I'm passionate about coding and learning
-          new things, and I'm always eager to explore new areas in the field of data science. In my current role at Capital One, I leverage my knowledge and
-          experience to extract meaningful insights from data, identify patterns and trends, and create predictive models that drive business growth.
+          Before joining Capital One, I worked as a machine learning engineer in Boston, where I conducted research on deep learning. The experience helped
+          me develop a strong foundation in machine learning algorithms, which I now use to derive insights and make data-driven decisions at my current
+          job. I enjoy coding and learning new things, which has enabled me to stay on top of the latest developments in my field.
         </p>
         <p>
-          Outside of work, I have a few hobbies that I love to indulge in. I've been playing the violin since I was a child and continue to find joy in
-          classical music. I'm also a big fan of anime and love to immerse myself in the rich and imaginative worlds that anime creators bring to life. When
-          I'm not watching anime or playing the violin, you can usually find me doing hip hop dance or playing video games. My current go-to games are
-          League of Legends (where I rank in the top 0.5%) and Genshin Impact. I find that playing video games helps me unwind after a long day at work and
-          keeps my mind sharp.
+          Outside of work, I have several hobbies that keep me busy. I'm an avid violinist and have been playing since I was young. I also enjoy anime and
+          hip hop dance, which are great ways to unwind and express myself creatively. Additionally, I love video games, particularly competitive ones like
+          League of Legends, where I've peaked in the top 0.1%, as well as RPGs like Genshin Impact. These hobbies allow me to exercise my brain in
+          different ways and provide a much-needed break from my day-to-day work.
         </p>
       </article>
     </>
@@ -75,6 +74,6 @@ Given some descriptors of me below, write me a first-person "About Me" section o
   b. anime
   c. hip hop dance
   d. video games:
-    1. competitive (i.e. league of legends (ranked 0.5%))
+    1. competitve (i.e. league of legends (peaked top 0.1%))
     2. rpgs (i.e. genshin impact, lost ark, guild wars 2)
 */
