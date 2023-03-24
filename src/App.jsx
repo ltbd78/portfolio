@@ -9,7 +9,7 @@ import Layout from "./components/Layout";
 // https://sombriks.com/blog/0044-cra-builds-for-non-root-urls
 export default function App() {
   return (
-    <BrowserRouter basename={process.env.REACT_APP_URI}>
+    <BrowserRouter basename={process.env.REACT_APP_BASENAME}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
