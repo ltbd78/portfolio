@@ -14,7 +14,7 @@ export default function Sidebar() {
         <img className="sub-logo" src={LogoSubtitle} alt="sub-logo" />
       </div>
       <nav>
-        <NavLink exact activeClassName="active" className="home-link" to="">
+        <NavLink exact activeClassName="active" className="home-link" to="/">
           <FontAwesomeIcon icon={faHome} />
           <span className="link-text">HOME</span>
         </NavLink>

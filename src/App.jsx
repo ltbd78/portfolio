@@ -5,12 +5,14 @@ import Home from "./components/Home";
 import Layout from "./components/Layout";
 
 // https://github.com/bobangajicsm/react-portfolio-website
+// https://create-react-app.dev/docs/deployment/#github-pages
+// https://sombriks.com/blog/0044-cra-builds-for-non-root-urls
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.REACT_APP_URI}>
       <Routes>
-        <Route exact path="portfolio" element={<Layout />}>
-          <Route path="" element={<Home />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
           <Route path="about" element={<About />} />
         </Route>
       </Routes>
