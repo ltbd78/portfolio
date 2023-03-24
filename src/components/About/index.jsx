@@ -50,10 +50,11 @@ export default function About() {
           job. I enjoy coding and learning new things, which has enabled me to stay on top of the latest developments in my field.
         </p>
         <p>
-          Outside of work, I have several hobbies that keep me busy. I'm an avid violinist and have been playing since I was young. I also enjoy anime and
-          hip hop dance, which are great ways to unwind and express myself creatively. Additionally, I love video games, particularly competitive ones like
-          League of Legends, where I've peaked in the top 0.1%, as well as RPGs like Genshin Impact. These hobbies allow me to exercise my brain in
-          different ways and provide a much-needed break from my day-to-day work.
+          When I'm not working, I enjoy exploring my creative side through various hobbies. I've been playing the violin since I was young, and it remains a
+          passion of mine to this day. I also enjoy watching anime and discovering new series to immerse myself in. Additionally, I have a love for hip hop
+          dance, which not only helps me stay in shape but also allows me to express myself creatively. Lastly, I am an avid gamer, both competitively and
+          for fun. I enjoy games like League of Legends, where I've achieved a ranking in the top 0.1%, as well as RPGs such as Genshin Impact, Lost Ark,
+          and Guild Wars 2. These hobbies allow me to exercise my brain in different ways and provide a much-needed break from my day-to-day work.
         </p>
       </article>
     </>
