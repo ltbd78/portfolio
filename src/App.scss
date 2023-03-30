@@ -2,14 +2,6 @@
 @import "variables.scss";
 @import "loaders.css/src/animations/ball-beat.scss";
 
-.loader-active {
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: fadeOut;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-}
 html {
   font-size: 10px; // for rem reference
   body {
@@ -28,27 +20,35 @@ html {
       min-width: 100svw;
       overflow-x: hidden; // article element overflows
       width: max-content;
-    }
-    h1 {
-      color: $primary-color;
-      font-family: "Coolvetica";
-      font-size: 5.2rem;
-      font-weight: 400;
-      letter-spacing: 1px;
-    }
-    h2 {
-      color: $secondary-color;
-      font-family: sans-serif;
-      font-size: 1.3rem;
-      font-weight: 400;
-      letter-spacing: 3px;
-    }
-    p {
-      color: $secondary-color;
-      font-family: sans-serif;
-      font-size: 1.3rem;
-      font-weight: 300;
-      letter-spacing: 1px;
+      .loader-active {
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: fadeOut;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+      }
+      h1 {
+        color: $primary-color;
+        font-family: "Coolvetica";
+        font-size: clamp(3.9rem, 5.2rem, 6.5rem);
+        font-weight: 400;
+        letter-spacing: 1px;
+      }
+      h2 {
+        color: $secondary-color;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: 3px;
+      }
+      p {
+        color: $secondary-color;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+      }
     }
   }
 }
