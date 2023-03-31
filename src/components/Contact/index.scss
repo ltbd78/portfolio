@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+@import "./envelope.scss";
+
+.contact-page {
+  .heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .letter-image {
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      // width: 200px;
+      // height: 200px;
+      // -webkit-transform: translate(-50%, -50%);
+      // -moz-transform: translate(-50%, -50%);
+      // transform: translate(-50%, -50%);
+      // cursor: pointer;
+    }
+  }
+  p {
+    animation-delay: 1.5s, 1.5s;
+    animation-duration: 1s, 1s;
+    animation-fill-mode: forwards, forwards;
+    animation-name: fadeIn, pulse;
+    opacity: 0;
+  }
+}
