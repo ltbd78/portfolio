@@ -1,12 +1,12 @@
 @import "../../variables.scss";
 
 .page {
+  align-items: center;
   display: flex;
   flex-direction: column;
   grid-area: page;
   height: 100%;
   justify-content: space-between;
-  width: 100%;
   .horizontal-bar {
     align-items: center;
     display: flex;
@@ -26,5 +26,13 @@
       margin-left: 13px;
       opacity: 0.5;
     }
+  }
+  article {
+    padding-left: 39px; /* in case width is too narrow */
+    box-sizing: border-box; /* so padding doesn't add to scroll bar;  */
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    z-index: 0; /* must be at least 0 to be above parent containers */
   }
 }

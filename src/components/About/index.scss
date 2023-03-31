@@ -2,12 +2,7 @@
 
 $cube-size: 100px;
 
-article.about-page {
-  display: flex;
-  flex-direction: column;
-  padding-left: 39px;
-  width: 500px;
-  z-index: 0; /* must be at least 0 to be above parent containers */
+.about-page {
   .heading {
     display: flex;
     flex-direction: row;
@@ -33,9 +28,6 @@ article.about-page {
         height: $cube-size;
         transform-style: preserve-3d;
         width: $cube-size;
-        &:hover {
-          animation-play-state: paused;
-        }
         div {
           align-items: center;
           background-color: rgba(255, 0, 0, 0.13);
