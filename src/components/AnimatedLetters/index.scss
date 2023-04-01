@@ -1,25 +1,25 @@
 @import "../../variables.scss";
 
-.initial-animation {
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: bounceIn;
+.letter {
   display: inline-block; /* default `display: inline` has limited animation properties */
   min-width: 10px; /* whitespace character has 0 width for inline-block */
-  opacity: 0;
-}
-.hover-animation {
-  display: inline-block;
-  min-width: 10px;
-  &:hover {
+  &.initial-animation {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: bounceIn;
+    opacity: 0;
+  }
+  &.hover-animation {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: rubberBand;
+  }
+  &:hover {
     color: $accent-color;
   }
-}
-@for $i from 1 through 100 {
-  .initial-animation.delay#{$i} {
-    animation-delay: #{calc($i / 10)}s;
+  @for $i from 1 through 100 {
+    &.initial-animation.delay#{$i} {
+      animation-delay: #{calc($i / 10)}s;
+    }
   }
 }

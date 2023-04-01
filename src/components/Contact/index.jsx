@@ -27,15 +27,17 @@ function Envelope() {
 }
 
 export default function Contact() {
-  const [animationClass, setAnimationClass] = useState("initial-animation");
-  setTimeout(() => setAnimationClass("hover-animation"), 2000);
+  const [initialClass, setInitialClass] = useState("initial-animation");
+  const [hoverClass, setHoverClass] = useState("");
+  setTimeout(() => setInitialClass(""), 2000);
+  setTimeout(() => setHoverClass("hover-animation"), 2000);
   return (
     <>
       <Loader type="ball-beat" />
       <article className="contact-page">
         <div className="heading">
           <h1>
-            <AnimatedLetters animationClass={animationClass} strArray={"Contact Me".split("")} delay={10} />
+            <AnimatedLetters strArray={"Contact Me".split("")} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
           </h1>
           <Envelope />
         </div>

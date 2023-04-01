@@ -6,26 +6,22 @@ import Loader from "react-loaders";
 import LogoTitle from "../../assets/images/logo-l.png";
 
 export default function Home() {
-  const [animationClass, setAnimationClass] = useState("initial-animation");
-  const str_hi = "Hi,".split("");
-  const str_im = "I'm".split("");
-  const str_insuhan = "insu Han".split("");
-  const str_datascientist = "Data Scientist".split("");
-
-  setTimeout(() => setAnimationClass("hover-animation"), 4000);
-
+  const [initialClass, setInitialClass] = useState("initial-animation");
+  const [hoverClass, setHoverClass] = useState("");
+  setTimeout(() => setInitialClass(""), 4000);
+  setTimeout(() => setHoverClass("hover-animation"), 4000);
   return (
     <>
       <Loader type="ball-beat" />
       <article className="home-page">
         <h1>
-          <AnimatedLetters animationClass={animationClass} strArray={str_hi} delay={10} />
+          <AnimatedLetters strArray={"Hi,".split("")} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
           <br />
-          <AnimatedLetters animationClass={animationClass} strArray={str_im} delay={13} />
+          <AnimatedLetters strArray={"I'm".split("")} initialClass={initialClass} delay={13} hoverClass={hoverClass} />
           <img src={LogoTitle} alt="logo" />
-          <AnimatedLetters animationClass={animationClass} strArray={str_insuhan} delay={16} />
+          <AnimatedLetters strArray={"insu Han".split("")} initialClass={initialClass} delay={16} hoverClass={hoverClass} />
           <br />
-          <AnimatedLetters animationClass={animationClass} strArray={str_datascientist} delay={24} />
+          <AnimatedLetters strArray={"Data Scientist".split("")} initialClass={initialClass} delay={24} hoverClass={hoverClass} />
         </h1>
         <h2>Machine Learning Engineer / Statistician</h2>
         <Link to="/contact" className="contact-button">

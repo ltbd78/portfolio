@@ -6,15 +6,17 @@ import AnimatedLetters from "../AnimatedLetters";
 import Loader from "react-loaders";
 
 export default function About() {
-  const [animationClass, setAnimationClass] = useState("initial-animation");
-  setTimeout(() => setAnimationClass("hover-animation"), 2000);
+  const [initialClass, setInitialClass] = useState("initial-animation");
+  const [hoverClass, setHoverClass] = useState("");
+  setTimeout(() => setInitialClass(""), 2000);
+  setTimeout(() => setHoverClass("hover-animation"), 2000);
   return (
     <>
       <Loader type="ball-beat" />
       <article className="about-page">
         <div className="heading">
           <h1>
-            <AnimatedLetters animationClass={animationClass} strArray={"About Me".split("")} delay={10} />
+            <AnimatedLetters strArray={"About Me".split("")} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
           </h1>
           <div className="cube-container">
             <div className="cube">
