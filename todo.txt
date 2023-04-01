@@ -7,3 +7,5 @@
 - add youtube
 - add color wheel buttons
 - add svg animation
+- learn how to reverse animation (for envelope)
+- continue letter animation upon hover-out

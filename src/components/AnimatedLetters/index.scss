@@ -9,11 +9,11 @@
   opacity: 0;
 }
 .hover-animation {
-  animation-fill-mode: both;
   display: inline-block;
   min-width: 10px;
   &:hover {
     animation-duration: 1s;
+    animation-fill-mode: both;
     animation-name: rubberBand;
     color: $accent-color;
   }

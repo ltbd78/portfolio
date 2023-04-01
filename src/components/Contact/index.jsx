@@ -40,6 +40,7 @@ export default function Contact() {
           <Envelope />
         </div>
         <p>Please do not hesitate to use the form below to get in touch with me if you have any inquires or requests.</p>
+        <div className="contact-form"></div>
       </article>
     </>
   );
