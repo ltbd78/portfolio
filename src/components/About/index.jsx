@@ -3,7 +3,6 @@ import { faCss3, faGitAlt, faHtml5, faJsSquare, faPython, faReact } from "@forta
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
-import Loader from "react-loaders";
 
 export default function About() {
   const [initialClass, setInitialClass] = useState("initial-animation");
@@ -12,7 +11,6 @@ export default function About() {
   setTimeout(() => setHoverClass("hover-animation"), 2000);
   return (
     <>
-      <Loader type="ball-beat" />
       <article className="about-page">
         <div className="heading">
           <h1>

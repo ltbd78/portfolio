@@ -1,7 +1,6 @@
 import "./index.scss";
 import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
-import Loader from "react-loaders";
 
 function Envelope() {
   // https://codepen.io/jakegilesphillips/pen/MveNLe
@@ -33,7 +32,6 @@ export default function Contact() {
   setTimeout(() => setHoverClass("hover-animation"), 2000);
   return (
     <>
-      <Loader type="ball-beat" />
       <article className="contact-page">
         <div className="heading">
           <h1>

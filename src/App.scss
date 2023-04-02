@@ -20,13 +20,14 @@ html {
       min-width: 100svw; /* "s" accouns for mobile address bar */
       overflow-x: hidden; /* article element overflows */
       width: max-content;
-      .loader-active {
+      .wheel-and-hamster {
         animation-duration: 1s;
         animation-fill-mode: forwards;
         animation-name: fadeOut;
         left: 50%;
         position: absolute;
         top: 50%;
+        transform: translate(-50%, -50%);
       }
       h1 {
         color: $primary-color;

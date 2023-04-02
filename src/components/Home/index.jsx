@@ -2,7 +2,6 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
-import Loader from "react-loaders";
 import LogoTitle from "../../assets/images/logo-l.png";
 
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
   setTimeout(() => setHoverClass("hover-animation"), 4000);
   return (
     <>
-      <Loader type="ball-beat" />
       <article className="home-page">
         <h1>
           <AnimatedLetters strArray={"Hi,".split("")} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
