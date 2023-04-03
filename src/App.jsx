@@ -6,25 +6,29 @@ import HamsterLoader from "./components/Loader";
 import Home from "./components/Home";
 import Layout from "./components/Layout";
 
-function withLoading(Component, key) {
-  return (
-    <>
-      <HamsterLoader key={key} />
-      <Component />
-    </>
-  );
+function withLoader(Component) { // Function that returns a React Component definition (notice case)
+  return function WithLoader(props) { // React component definition that can accept props (notice case)
+    return (
+      <>
+        <HamsterLoader />
+        <Component {...props} />
+      </>
+    )
+  };
 }
 
-export default function App() {
-  const key = Math.random(); // generate a random key
+const HomeWithLoader = withLoader(Home); // Calling <HomeWithLoader foo="bar" /> initializes it and passes in a prop
+const ContactWithLoader = withLoader(Contact);
+const AboutWithLoader = withLoader(About);
 
+export default function App() {
   return (
     <MemoryRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={withLoading(Home, key)} />
-          <Route path="about" element={withLoading(About, key)} />
-          <Route path="contact" element={withLoading(Contact, key)} />
+          <Route index element={<HomeWithLoader />} />
+          <Route path="about" element={<ContactWithLoader />} />
+          <Route path="contact" element={<AboutWithLoader />} />
         </Route>
       </Routes>
     </MemoryRouter>
