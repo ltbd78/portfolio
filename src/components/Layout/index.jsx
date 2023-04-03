@@ -1,11 +1,14 @@
 import "./index.scss";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
+import HamsterLoader from "../Loader";
 import Sidebar from "../Sidebar";
 
 export default function Layout() {
+  const location = useLocation();
   return (
     <div className="App">
       <Sidebar />
+      <HamsterLoader key={location.key} />
       <div className="page">
         <header className="horizontal-bar">
           <div className="tags">
@@ -14,7 +17,7 @@ export default function Layout() {
             &nbsp;&nbsp;&lt;body&gt;
           </div>
         </header>
-        <Outlet />
+        <Outlet key={location.key} />
         <footer className="horizontal-bar">
           <div className="tags">
             &nbsp;&nbsp;&lt;/body&gt;

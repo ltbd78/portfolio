@@ -1,13 +1,5 @@
 /* https://uiverse.io/Nawsome/wet-mayfly-23 */
 
-.wheel-and-hamster {
-  --dur: 1s;
-  font-size: 14px;
-  height: 12em;
-  position: relative;
-  width: 12em;
-}
-
 .wheel,
 .hamster,
 .hamster div,
