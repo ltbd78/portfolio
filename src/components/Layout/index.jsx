@@ -1,13 +1,13 @@
 import "./index.scss";
 import { Outlet, useLocation } from "react-router-dom";
 import HamsterLoader from "../Loader";
-import Sidebar from "../Sidebar";
+import Navbar from "../Navbar";
 
 export default function Layout() {
   const location = useLocation();
   return (
     <div className="App">
-      <Sidebar />
+      <Navbar />
       <HamsterLoader key={location.key} />
       <div className="page">
         <header className="horizontal-bar">

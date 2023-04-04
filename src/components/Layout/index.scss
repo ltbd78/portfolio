@@ -1,6 +1,5 @@
 @import "../../variables.scss";
 
-
 .App {
   background: $background-color;
   color: $primary-color;
@@ -8,8 +7,8 @@
   font-family: "Helvetica Neue", "sans-serif";
   font-weight: 400;
   grid-template-areas: "nav page";
-  grid-template-columns: $sidebarwidth auto;
-  height: max-content; /* sidebar items will shift for small height */
+  grid-template-columns: $navbarwidth auto;
+  height: max-content; /* navbar items will shift for small height */
   line-height: 1.3;
   min-height: 100svh; /* "s" accouns for mobile address bar */
   min-width: 100svw; /* "s" accouns for mobile address bar */
@@ -22,7 +21,7 @@
     animation-name: fadeOut;
     font-size: 26px;
     height: 12em;
-    left: calc(50% + $sidebarwidth/2);
+    left: calc(50% + $navbarwidth/2);
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%); /* uses div center as reference for positioning */
@@ -59,8 +58,8 @@
       // box-sizing: border-box; /* adds padding/border WxH; */
       display: flex;
       flex-direction: column;
-      margin-left: $sidebarwidth; /* in case width is too narrow */
-      margin-right: $sidebarwidth;
+      margin-left: $navbarwidth; /* in case width is too narrow */
+      margin-right: $navbarwidth;
       width: 500px;
       z-index: 0; /* must be at least 0 to be above parent containers */
     }

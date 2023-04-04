@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import LogoL from "../../assets/images/logo-l.png";
 import LogoSubtitle from "../../assets/images/logo_sub.png";
 
-export default function Sidebar() {
+export default function Navbar() {
   return (
     <div className="nav-bar">
       <div className="logo">
@@ -27,28 +27,20 @@ export default function Sidebar() {
           <span className="link-text">CONTACT</span>
         </NavLink>
       </nav>
-      <ul>
-        <li>
-          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/linsuhan/">
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" rel="noreferrer" href="https://www.github.com/ltbd78/">
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/ltbd78/">
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@linsuhan/">
-            <FontAwesomeIcon icon={faTiktok} />
-          </a>
-        </li>
-      </ul>
+      <nav>
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/linsuhan/">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://www.github.com/ltbd78/">
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/ltbd78/">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@linsuhan/">
+          <FontAwesomeIcon icon={faTiktok} />
+        </a>
+      </nav>
     </div>
   );
 }
