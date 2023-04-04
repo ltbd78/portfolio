@@ -9,7 +9,7 @@
       animation-name: wiggle, fadeIn;
       clip-path: inset(0 30% 0 30%); /* so letter i doesn't get covered */
       height: auto;
-      margin: 0px -19px -12px 0px;
+      margin: 0px -1.9rem -1.2rem 0px;
       opacity: 0;
       width: 6.5rem;
     }
@@ -31,13 +31,14 @@
     border-width: 1px;
     color: $accent-color;
     font-family: sans-serif;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 400;
     letter-spacing: 4px;
-    margin-top: 13px;
+    margin-left: 1rem;
+    margin-top: 2rem;
     max-width: fit-content;
     opacity: 0;
-    padding: 13px 26px;
+    padding: 1.3rem 2.6rem;
     text-decoration: none;
     &:hover {
       background: $accent-color;

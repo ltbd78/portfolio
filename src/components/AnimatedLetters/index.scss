@@ -2,7 +2,8 @@
 
 .letter {
   display: inline-block; /* default `display: inline` has limited animation properties */
-  min-width: 10px; /* whitespace character has 0 width for inline-block */
+  min-width: 1rem; /* whitespace character has 0 width for inline-block */ // TODO: strange behavior when increased
+  align-items: center;
   &.initial-animation {
     animation-duration: 1s;
     animation-fill-mode: forwards;

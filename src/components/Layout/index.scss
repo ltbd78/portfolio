@@ -1,19 +1,18 @@
 @import "../../variables.scss";
 
 .App {
+  // height: max-content; /* navbar items will shift for small height */
+  // max-width: 100svw; /* to prevent text overflow */
+  // min-width: 100svw; /* "s" accounts for mobile address bar */
+  // overflow-x: hidden; /* article element overflows */
+  // width: max-content;
   background: $background-color;
   color: $primary-color;
   display: grid;
-  font-family: "Helvetica Neue", "sans-serif";
-  font-weight: 400;
   grid-template-areas: "nav page";
-  grid-template-columns: $navbarwidth auto;
-  height: max-content; /* navbar items will shift for small height */
+  grid-template-columns: $navbar-width auto;
   line-height: 1.3;
-  min-height: 100svh; /* "s" accouns for mobile address bar */
-  min-width: 100svw; /* "s" accouns for mobile address bar */
-  overflow-x: hidden; /* article element overflows */
-  width: max-content;
+  min-height: 100svh; /* "s" accounts for mobile address bar */
   .wheel-and-hamster {
     --dur: 1s;
     animation-duration: 1s;
@@ -21,7 +20,7 @@
     animation-name: fadeOut;
     font-size: 26px;
     height: 12em;
-    left: calc(50% + $navbarwidth/2);
+    left: calc(50% + $navbar-width/2);
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%); /* uses div center as reference for positioning */
@@ -37,8 +36,9 @@
     .horizontal-bar {
       align-items: center;
       display: flex;
-      height: 65px;
+      height: max-content;
       opacity: 1;
+      overflow-y: hidden; /* text may exceed container */
       width: 100%;
       z-index: 1;
       .tags {
@@ -49,8 +49,10 @@
         animation-timing-function: ease-in-out;
         color: $accent-color;
         font-family: "La Belle Aurore";
-        font-size: 18px;
-        margin-left: 13px;
+        font-size: 2rem;
+        margin-bottom: calc($navbar-width / 4);
+        margin-left: calc($navbar-width / 2);
+        margin-top: calc($navbar-width / 4);
         opacity: 0.5;
       }
     }
@@ -58,9 +60,8 @@
       // box-sizing: border-box; /* adds padding/border WxH; */
       display: flex;
       flex-direction: column;
-      margin-left: $navbarwidth; /* in case width is too narrow */
-      margin-right: $navbarwidth;
-      width: 500px;
+      margin-left: $navbar-width; /* in case width is too narrow */
+      margin-right: $navbar-width;
       z-index: 0; /* must be at least 0 to be above parent containers */
     }
   }
