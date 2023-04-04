@@ -40,7 +40,13 @@ export default function Contact() {
           <Envelope />
         </div>
         <p>Please do not hesitate to use the form below to get in touch with me if you have any inquires or requests.</p>
-        <div className="contact-form"></div>
+        <form>
+          <input className="name" type="text" placeholder="Name" name="name" required />
+          <input className="email" type="email" placeholder="Email" name="email" required />
+          <input className="subject" type="text" placeholder="Subject" name="subject" />
+          <textarea className="message" placeholder="Message" name="message" required />
+          <input className="submit" type="submit" value="SEND" />
+        </form>
       </article>
     </>
   );

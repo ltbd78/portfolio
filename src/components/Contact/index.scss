@@ -25,4 +25,48 @@
     animation-name: fadeIn, pulse;
     opacity: 0;
   }
+  form {
+    animation-delay: 2s, 2s;
+    animation-duration: 1s, 1s;
+    animation-fill-mode: forwards, forwards;
+    animation-name: fadeIn, pulse;
+    display: grid;
+    grid-template-areas:
+      "name email"
+      "subject subject"
+      "message message"
+      "none submit";
+    margin-bottom: 13px;
+    margin-top: 13px;
+    opacity: 0;
+    input, textarea {
+      // background-color: ;
+      border-color: $primary-color;
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: 0 0 4px 0px $accent-color;
+      // color: $primary-color;
+      font-family: sans-serif;
+      font-size: 1.3rem;
+      margin: 5px;
+      min-height: 26px;
+    }
+    .name {
+      grid-area: name;
+    }
+    .email {
+      grid-area: email;
+    }
+    .subject {
+      grid-area: subject;
+    }
+    .message {
+      grid-area: message;
+      height: 100px;
+    }
+    .submit {
+      grid-area: submit;
+      margin-left: 50%;
+    }
+  }
 }

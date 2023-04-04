@@ -9,3 +9,6 @@
 - add svg animation
 - learn how to reverse animation (for envelope)
 - fix animation letter stuck (& remove delay variable)
+
+- personal violin music
+- video game clips
