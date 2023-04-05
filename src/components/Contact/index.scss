@@ -6,13 +6,14 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     .letter-image {
       animation-delay: 2s;
       animation-duration: 2s;
       animation-fill-mode: forwards;
       animation-name: fadeIn;
       height: $letter-size;
+      margin: calc($letter-size/5);
       opacity: 0;
       position: relative; /* so .shadow references this */
       width: $letter-size;
