@@ -37,21 +37,24 @@
       "subject subject"
       "message message"
       "none submit";
+    grid-template-columns: 1 fr 1 fr;
+    grid-gap: 5px;
     margin-bottom: 13px;
     margin-top: 13px;
     opacity: 0;
     input,
     textarea {
       // background-color: ;
-      border-color: $primary-color;
-      border-style: solid;
-      border-width: 1px;
-      box-shadow: 0 0 4px 0px $accent-color;
+      // border-color: $primary-color;
+      // border-style: solid;
+      // border-width: 1px;
+      // box-shadow: 0 0 4px 0px $accent-color;
       // color: $primary-color;
-      font-family: sans-serif;
-      font-size: 1.3rem;
-      margin: 5px;
-      min-height: 26px;
+      // font-family: sans-serif;
+      // font-size: 1.3rem;
+      // margin: 5px;
+      // min-height: 26px;
+      // width: auto;
     }
     .name {
       grid-area: name;

@@ -3,41 +3,55 @@
 .nav-bar {
   background: $nav-bar-color;
   display: flex;
-  flex-direction: column;
   grid-area: nav;
-  height: 100%;
   justify-content: space-between;
   z-index: 100; /* in case when .nav-bar gets covered by .page */
+  position: sticky;
+  top: 0;
+  // align-self: flex-start;
+  // bottom: 0px;
+  img {
+    height: $navbar-size;
+    width: $navbar-size;
+  }
+  @media screen and (orientation: landscape) {
+    flex-direction: column;
+    height: 100%;
+  }
+  @media screen and (orientation: portrait) {
+    flex-direction: row;
+    width: 100%;
+  }
   svg {
     color: $secondary-color;
   }
-  .logo {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    img {
-      width: 100%;
-      &.sub-logo {
-        width: 78%;
-      }
-    }
-  }
   nav {
-    align-items: center;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    @media screen and (orientation: landscape) {
+      flex-direction: column;
+    }
+    @media screen and (orientation: portrait) {
+      flex-direction: row;
+    }
     a {
       align-items: center;
       display: flex;
-      flex-direction: column;
-      height: $navbar-width;
       justify-content: center;
       position: relative; /* anchor point for children */
-      width: 0px; /* don't want the area outside the svg to be clickable */
+      @media screen and (orientation: landscape) {
+        flex-direction: column;
+        height: $navbar-size;
+        width: 0px; /* don't want the area outside the svg to be clickable */
+      }
+      @media screen and (orientation: portrait) {
+        flex-direction: row;
+        height: 0px; /* don't want the area outside the svg to be clickable */
+        width: $navbar-size;
+      }
       svg {
+        height: calc($navbar-size / 2); /* width doesn't scale well and % changes */
         position: absolute;
-        height: 50%;
       }
       &.active {
         color: $accent-color;

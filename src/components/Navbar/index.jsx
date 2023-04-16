@@ -9,10 +9,7 @@ import LogoSubtitle from "../../assets/images/logo_sub.png";
 export default function Navbar() {
   return (
     <div className="nav-bar">
-      <div className="logo">
-        <img src={LogoL} alt="logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="sub-logo" />
-      </div>
+      <img src={LogoL} className="logo" alt="logo" />
       <nav>
         <NavLink className="home-link" to="/">
           <FontAwesomeIcon icon={faHome} />

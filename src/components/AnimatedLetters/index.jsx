@@ -25,5 +25,5 @@ export default function AnimatedLetters({ strArray, initialClass, delay, hoverCl
       </span>
     );
   }
-  return <span>{strArray.map(animateLetter)}</span>;
+  return <div className="letters">{strArray.map(animateLetter)}</div>;
 }
