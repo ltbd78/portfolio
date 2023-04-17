@@ -1,29 +1,25 @@
-@import "../../variables.scss";
-
 .nav-bar {
-  background: $nav-bar-color;
+  background: var(--nav-bar-color);
   display: flex;
   grid-area: nav;
   justify-content: space-between;
-  z-index: 100; /* in case when .nav-bar gets covered by .page */
   position: sticky;
   top: 0;
-  // align-self: flex-start;
-  // bottom: 0px;
+  z-index: 100; /* in case when .nav-bar gets covered by .page */
   img {
-    height: $navbar-size;
-    width: $navbar-size;
+    height: var(--navbar-size);
+    width: var(--navbar-size);
   }
   @media screen and (orientation: landscape) {
     flex-direction: column;
-    height: 100%;
+    height: 100%; /* references .App */
   }
   @media screen and (orientation: portrait) {
     flex-direction: row;
-    width: 100%;
+    width: 100%; /* references .App */
   }
   svg {
-    color: $secondary-color;
+    color: var(--secondary-color);
   }
   nav {
     display: flex;
@@ -41,23 +37,23 @@
       position: relative; /* anchor point for children */
       @media screen and (orientation: landscape) {
         flex-direction: column;
-        height: $navbar-size;
+        height: var(--navbar-size);
         width: 0px; /* don't want the area outside the svg to be clickable */
       }
       @media screen and (orientation: portrait) {
         flex-direction: row;
         height: 0px; /* don't want the area outside the svg to be clickable */
-        width: $navbar-size;
+        width: var(--navbar-size);
       }
       svg {
-        height: calc($navbar-size / 2); /* width doesn't scale well and % changes */
+        height: calc(var(--navbar-size) / 2); /* width doesn't scale well and % changes */
         position: absolute;
       }
       &.active {
-        color: $accent-color;
+        color: var(--accent-color);
       }
       .link-text {
-        color: $accent-color;
+        color: var(--accent-color);
         opacity: 0;
         position: absolute;
         transition-delay: 0s;
@@ -68,7 +64,7 @@
     }
     &:nth-of-type(1) a {
       &.active svg {
-        color: $accent-color;
+        color: var(--accent-color);
       }
       &:hover {
         svg {
@@ -82,7 +78,7 @@
     &:nth-of-type(2) a svg:hover {
       animation-duration: 2s;
       animation-name: wiggle;
-      color: $accent-color;
+      color: var(--accent-color);
     }
   }
 }

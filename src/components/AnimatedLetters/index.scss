@@ -1,5 +1,3 @@
-@import "../../variables.scss";
-
 .letters {
   width: max-content;
   display: inline-block;
@@ -19,7 +17,7 @@
       animation-name: rubberBand;
     }
     &:hover {
-      color: $accent-color;
+      color: var(--accent-color);
     }
     @for $i from 1 through 100 {
       &.initial-animation.delay#{$i} {
