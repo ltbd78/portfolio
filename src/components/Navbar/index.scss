@@ -1,84 +1,90 @@
-.nav-bar {
-  background: var(--nav-bar-color);
-  display: flex;
-  grid-area: nav;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 100; /* in case when .nav-bar gets covered by .page */
-  img {
-    height: var(--navbar-size);
-    width: var(--navbar-size);
-  }
-  @media screen and (orientation: landscape) {
-    flex-direction: column;
-    height: 100%; /* references .App */
-  }
-  @media screen and (orientation: portrait) {
-    flex-direction: row;
-    width: 100%; /* references .App */
-  }
-  svg {
-    color: var(--secondary-color);
-  }
-  nav {
+@media screen and (orientation: landscape) {
+  .nav-bar {
+    background: var(--nav-bar-color);
     display: flex;
-    align-items: center;
-    @media screen and (orientation: landscape) {
-      flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    width: var(--navbar-size); /* also limits size of items inside */
+    svg {
+      color: var(--secondary-color);
+      height: calc(var(--navbar-size) / 2); /* width doesn't scale well and % changes */
+      &.hamburger-icon {
+        display: none;
+      }
     }
-    @media screen and (orientation: portrait) {
-      flex-direction: row;
-    }
-    a {
+    nav {
       align-items: center;
       display: flex;
-      justify-content: center;
-      position: relative; /* anchor point for children */
-      @media screen and (orientation: landscape) {
+      flex-direction: column;
+      a {
+        align-items: center;
+        display: flex;
         flex-direction: column;
         height: var(--navbar-size);
+        justify-content: center;
+        position: relative; /* anchor point for children */
         width: 0px; /* don't want the area outside the svg to be clickable */
-      }
-      @media screen and (orientation: portrait) {
-        flex-direction: row;
-        height: 0px; /* don't want the area outside the svg to be clickable */
-        width: var(--navbar-size);
-      }
-      svg {
-        height: calc(var(--navbar-size) / 2); /* width doesn't scale well and % changes */
-        position: absolute;
-      }
-      &.active {
-        color: var(--accent-color);
-      }
-      .link-text {
-        color: var(--accent-color);
-        opacity: 0;
-        position: absolute;
-        transition-delay: 0s;
-        transition-duration: 0.3s;
-        transition-property: all;
-        transition-timing-function: ease-out;
-      }
-    }
-    &:nth-of-type(1) a {
-      &.active svg {
-        color: var(--accent-color);
-      }
-      &:hover {
-        svg {
-          opacity: 0;
+        &.active {
+          color: var(--accent-color);
         }
         .link-text {
-          opacity: 1;
+          color: var(--accent-color);
+          opacity: 0;
+          position: absolute;
+          transition-delay: 0s;
+          transition-duration: 0.3s;
+          transition-property: all;
+          transition-timing-function: ease-out;
         }
       }
+      &:nth-of-type(1) a {
+        &.active svg {
+          color: var(--accent-color);
+        }
+        &:hover {
+          svg {
+            opacity: 0;
+          }
+          .link-text {
+            opacity: 1;
+          }
+        }
+      }
+      &:nth-of-type(2) a svg:hover {
+        animation-duration: 2s;
+        animation-name: wiggle;
+        color: var(--accent-color);
+      }
     }
-    &:nth-of-type(2) a svg:hover {
-      animation-duration: 2s;
-      animation-name: wiggle;
-      color: var(--accent-color);
+  }
+}
+
+@media screen and (orientation: portrait) {
+  // inactive
+
+  // active
+  .nav-bar {
+    align-items: center;
+    background: var(--nav-bar-color);
+    display: flex;
+    flex-direction: row;
+    height: var(--navbar-size);
+    justify-content: space-between;
+
+    // test
+    backdrop-filter: blur(100px); // doesn't work
+    height: 100%;
+    opacity: 95%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+
+    img {
+      width: var(--navbar-size); /* img fills width by default, so must limit */
+    }
+    svg {
+      color: var(--secondary-color);
+      height: calc(var(--navbar-size) / 2); /* width doesn't scale well and % changes */
     }
   }
 }

@@ -1,29 +1,16 @@
 .App {
-  // height: max-content; /* navbar items will shift for small height */
-  // max-width: 100svw; /* to prevent text overflow */
-  // min-height: 100svh; /* "s" accounts for mobile address bar */
-  // min-width: 100svw; /* "s" accounts for mobile address bar */
-  // overflow-x: hidden; /* article element overflows */
-  // min-width: 600px;
   background: var(--background-color);
   color: var(--primary-color);
-  display: grid;
+  display: flex;
   height: 100svh; // needed for navbar
-  line-height: 1.3;
   min-width: var(--min-width); /* width when elements start shrinking, try nav? */
-  overflow-y: scroll; /* for nav-bar sticky */
-  overflow-x: hidden;
-  position: absolute;
-  width: 100svw;
+  // width: 100svw; // don't set or margin will be gone
   @media screen and (orientation: landscape) {
-    grid-template-areas: "nav page";
-    grid-template-columns: var(--navbar-size) auto;
+    flex-direction: row;
   }
   @media screen and (orientation: portrait) {
-    grid-template-areas:
-      "nav"
-      "page";
-    grid-template-rows: var(--navbar-size) auto;
+    flex-direction: column;
+    // hide nav bar when scrolling downs
   }
   .wheel-and-hamster {
     --dur: 1s;

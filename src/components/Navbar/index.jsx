@@ -1,12 +1,13 @@
 import "./index.scss";
-import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHome, faUser, faBars } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import LogoL from "../../assets/images/logo-l.png";
-import LogoSubtitle from "../../assets/images/logo_sub.png";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [showNav, setShowNav] = useState(false);
   return (
     <div className="nav-bar">
       <img src={LogoL} className="logo" alt="logo" />
@@ -38,6 +39,7 @@ export default function Navbar() {
           <FontAwesomeIcon icon={faTiktok} />
         </a>
       </nav>
+      <FontAwesomeIcon onClick={() => setShowNav(true)} icon={faBars} className="hamburger-icon" />
     </div>
   );
 }
