@@ -92,6 +92,7 @@
         transition-duration: 1s;
         transition-property: all;
         transition-timing-function: ease-in-out;
+        visibility: hidden; /* almost functions like display: none */
       }
       a {
         align-items: center;
