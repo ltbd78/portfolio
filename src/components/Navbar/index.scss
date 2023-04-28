@@ -9,6 +9,9 @@
       color: var(--secondary-color);
       height: calc(var(--navbar-size) / 2); /* width doesn't scale well and % changes */
     }
+    .hamburger-menu {
+      display: none;
+    }
     nav {
       align-items: center;
       display: flex;
@@ -77,6 +80,19 @@
     nav {
       display: flex;
       flex-direction: row;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      transition-duration: 1s;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+      &.inactive {
+        transform: translateX(500%);
+        transition-duration: 1s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+      }
       a {
         align-items: center;
         display: flex;
