@@ -2,7 +2,8 @@
   background: var(--background-color);
   color: var(--primary-color);
   display: flex;
-  height: 100svh; // needed for navbar
+  min-height: 100svh; // needed for navbar
+  height: max-content;
   min-width: var(--min-width); /* width when elements start shrinking, try nav? */
   // width: 100svw; // don't set or body margin will be gone
   @media screen and (orientation: landscape) {
