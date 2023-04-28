@@ -4,7 +4,7 @@
   display: flex;
   height: 100svh; // needed for navbar
   min-width: var(--min-width); /* width when elements start shrinking, try nav? */
-  // width: 100svw; // don't set or margin will be gone
+  // width: 100svw; // don't set or body margin will be gone
   @media screen and (orientation: landscape) {
     flex-direction: row;
   }
@@ -38,7 +38,6 @@
       opacity: 1;
       overflow-y: hidden; /* text may exceed container */
       width: 100%;
-      z-index: 1;
       .tags {
         animation-delay: 3s;
         animation-duration: 3s;
