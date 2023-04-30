@@ -1,19 +1,17 @@
 import "./index.scss";
-import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHome, faUser, faBars } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import LogoL from "../../assets/images/logo-l.png";
-import LogoSubtitle from "../../assets/images/logo_sub.png";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [toggle, setToggle] = useState(true);
   return (
     <div className="nav-bar">
-      <div className="logo">
-        <img src={LogoL} alt="logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="sub-logo" />
-      </div>
-      <nav>
+      <img src={LogoL} className="logo" alt="logo" />
+      <nav className={toggle ? "pages" : "pages inactive"}>
         <NavLink className="home-link" to="/">
           <FontAwesomeIcon icon={faHome} />
           <span className="link-text">HOME</span>
@@ -27,7 +25,7 @@ export default function Navbar() {
           <span className="link-text">CONTACT</span>
         </NavLink>
       </nav>
-      <nav>
+      <nav className={toggle ? "socials inactive" : "socials"}>
         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/linsuhan/">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
@@ -41,6 +39,7 @@ export default function Navbar() {
           <FontAwesomeIcon icon={faTiktok} />
         </a>
       </nav>
+      <FontAwesomeIcon onClick={() => setToggle(!toggle)} icon={faBars} className="hamburger-menu" />
     </div>
   );
 }

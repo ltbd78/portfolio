@@ -1,26 +1,28 @@
-@import "../../variables.scss";
-
-.letter {
-  display: inline-block; /* default `display: inline` has limited animation properties */
-  min-width: 1rem; /* whitespace character has 0 width for inline-block */ // TODO: strange behavior when increased
-  align-items: center;
-  &.initial-animation {
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-name: bounceIn;
-    opacity: 0;
-  }
-  &.hover-animation {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: rubberBand;
-  }
-  &:hover {
-    color: $accent-color;
-  }
-  @for $i from 1 through 100 {
-    &.initial-animation.delay#{$i} {
-      animation-delay: #{calc($i / 10)}s;
+.letters {
+  width: max-content;
+  display: inline-block;
+  .letter {
+    display: inline-block; /* default `display: inline` has limited animation properties */
+    min-width: 1rem; /* whitespace character has 0 width for inline-block */ // TODO: strange behavior when increased
+    align-items: center;
+    &.initial-animation {
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-name: bounceIn;
+      opacity: 0;
+    }
+    &.hover-animation {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-name: rubberBand;
+    }
+    &:hover {
+      color: var(--accent-color);
+    }
+    @for $i from 1 through 100 {
+      &.initial-animation.delay#{$i} {
+        animation-delay: #{calc($i / 10)}s;
+      }
     }
   }
 }

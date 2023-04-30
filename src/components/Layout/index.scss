@@ -1,37 +1,44 @@
-@import "../../variables.scss";
-
 .App {
-  // height: max-content; /* navbar items will shift for small height */
-  // max-width: 100svw; /* to prevent text overflow */
-  // min-width: 100svw; /* "s" accounts for mobile address bar */
-  // overflow-x: hidden; /* article element overflows */
-  // width: max-content;
-  background: $background-color;
-  color: $primary-color;
-  display: grid;
-  grid-template-areas: "nav page";
-  grid-template-columns: $navbar-width auto;
-  line-height: 1.3;
-  min-height: 100svh; /* "s" accounts for mobile address bar */
+  background: var(--background-color);
+  color: var(--primary-color);
+  display: flex;
+  min-height: 100svh; // needed for navbar
+  height: max-content;
+  min-width: var(--min-width); /* width when elements start shrinking, try nav? */
+  // width: 100svw; // don't set or body margin will be gone
+  @media screen and (orientation: landscape) {
+    flex-direction: row;
+  }
+  @media screen and (orientation: portrait) {
+    flex-direction: column;
+    // hide nav bar when scrolling downs
+  }
   .wheel-and-hamster {
     --dur: 1s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: fadeOut;
-    font-size: 26px;
+    font-size: var(--hamster-size);
     height: 12em;
-    left: calc(50% + $navbar-width/2);
     position: absolute;
-    top: 50%;
     transform: translate(-50%, -50%); /* uses div center as reference for positioning */
     width: 12em;
+
+    @media screen and (orientation: landscape) {
+      left: calc(50% + var(--navbar-size) / 2);
+      top: 50%;
+    }
+    @media screen and (orientation: portrait) {
+      left: 50%;
+      top: calc(50% + var(--navbar-size) / 2);
+    }
+
   }
   .page {
     align-items: center;
     display: flex;
     flex-direction: column;
     grid-area: page;
-    height: 100%;
     justify-content: space-between;
     .horizontal-bar {
       align-items: center;
@@ -40,19 +47,18 @@
       opacity: 1;
       overflow-y: hidden; /* text may exceed container */
       width: 100%;
-      z-index: 1;
       .tags {
         animation-delay: 3s;
         animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-name: glow;
         animation-timing-function: ease-in-out;
-        color: $accent-color;
+        color: var(--accent-color);
         font-family: "La Belle Aurore";
         font-size: 2rem;
-        margin-bottom: calc($navbar-width / 4);
-        margin-left: calc($navbar-width / 2);
-        margin-top: calc($navbar-width / 4);
+        margin-bottom: calc(var(--navbar-size) / 4);
+        margin-left: calc(var(--navbar-size) / 2);
+        margin-top: calc(var(--navbar-size) / 4);
         opacity: 0.5;
       }
     }
@@ -60,8 +66,8 @@
       // box-sizing: border-box; /* adds padding/border WxH; */
       display: flex;
       flex-direction: column;
-      margin-left: $navbar-width; /* in case width is too narrow */
-      margin-right: $navbar-width;
+      margin-left: var(--navbar-size); /* in case width is too narrow */
+      margin-right: var(--navbar-size);
       z-index: 0; /* must be at least 0 to be above parent containers */
     }
   }

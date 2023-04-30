@@ -1,74 +1,140 @@
-@import "../../variables.scss";
-
-.nav-bar {
-  background: $nav-bar-color;
-  display: flex;
-  flex-direction: column;
-  grid-area: nav;
-  height: 100%;
-  justify-content: space-between;
-  z-index: 100; /* in case when .nav-bar gets covered by .page */
-  svg {
-    color: $secondary-color;
-  }
-  .logo {
-    align-items: center;
+@media screen and (orientation: landscape) {
+  .nav-bar {
+    background: var(--nav-bar-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    img {
-      width: 100%;
-      &.sub-logo {
-        width: 78%;
-      }
+    justify-content: space-between;
+    width: var(--navbar-size); /* also limits size of items inside */
+    svg {
+      color: var(--secondary-color);
+      height: calc(var(--navbar-size) / 2); /* width doesn't scale well and % changes */
     }
-  }
-  nav {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    a {
+    .hamburger-menu {
+      display: none;
+    }
+    nav {
       align-items: center;
       display: flex;
       flex-direction: column;
-      height: $navbar-width;
-      justify-content: center;
-      position: relative; /* anchor point for children */
-      width: 0px; /* don't want the area outside the svg to be clickable */
-      svg {
-        position: absolute;
-        height: 50%;
-      }
-      &.active {
-        color: $accent-color;
-      }
-      .link-text {
-        color: $accent-color;
-        opacity: 0;
-        position: absolute;
-        transition-delay: 0s;
-        transition-duration: 0.3s;
-        transition-property: all;
-        transition-timing-function: ease-out;
-      }
-    }
-    &:nth-of-type(1) a {
-      &.active svg {
-        color: $accent-color;
-      }
-      &:hover {
-        svg {
-          opacity: 0;
+      a {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: var(--navbar-size);
+        justify-content: center;
+        position: relative; /* anchor point for children */
+        width: 0px; /* don't want the area outside the svg to be clickable */
+        &.active {
+          color: var(--accent-color);
         }
         .link-text {
-          opacity: 1;
+          color: var(--accent-color);
+          opacity: 0;
+          position: absolute;
+          transition-delay: 0s;
+          transition-duration: 0.3s;
+          transition-property: all;
+          transition-timing-function: ease-out;
         }
       }
+      &:nth-of-type(1) a {
+        &.active svg {
+          color: var(--accent-color);
+        }
+        &:hover {
+          svg {
+            opacity: 0;
+          }
+          .link-text {
+            opacity: 1;
+          }
+        }
+      }
+      &:nth-of-type(2) a svg:hover {
+        animation-duration: 2s;
+        animation-name: wiggle;
+        color: var(--accent-color);
+      }
     }
-    &:nth-of-type(2) a svg:hover {
-      animation-duration: 2s;
-      animation-name: wiggle;
-      color: $accent-color;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .nav-bar {
+    align-items: center;
+    background-color: var(--nav-bar-color);
+    display: flex;
+    flex-direction: row;
+    height: var(--navbar-size);
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1; /* so nav bar on top */
+    img {
+      width: var(--navbar-size); /* limit, otherwise img fills width by default */
+    }
+    svg {
+      color: var(--secondary-color);
+      height: calc(var(--navbar-size) / 2); /* width doesn't scale well and % changes */
+    }
+    .hamburger-menu {
+      margin: calc(var(--navbar-size) / 4);
+    }
+    nav {
+      display: flex;
+      flex-direction: row;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      transition-duration: 1s;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+      &.inactive {
+        opacity: 0;
+        transition-duration: 1s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        visibility: hidden; /* almost functions like display: none */
+      }
+      a {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 0px; /* don't want the area outside the svg to be clickable */
+        justify-content: center;
+        width: var(--navbar-size);
+        &.active {
+          color: var(--accent-color);
+        }
+        .link-text {
+          color: var(--accent-color);
+          opacity: 0;
+          position: absolute;
+          transition-delay: 0s;
+          transition-duration: 0.3s;
+          transition-property: all;
+          transition-timing-function: ease-out;
+        }
+      }
+      &:nth-of-type(1) a {
+        &.active svg {
+          color: var(--accent-color);
+        }
+        &:hover {
+          svg {
+            opacity: 0;
+          }
+          .link-text {
+            opacity: 1;
+          }
+        }
+      }
+      &:nth-of-type(2) a svg:hover {
+        animation-duration: 2s;
+        animation-name: wiggle;
+        color: var(--accent-color);
+      }
     }
   }
 }
