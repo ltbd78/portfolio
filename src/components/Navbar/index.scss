@@ -77,6 +77,9 @@
       color: var(--secondary-color);
       height: calc(var(--navbar-size) / 2); /* width doesn't scale well and % changes */
     }
+    .hamburger-menu {
+      margin: calc(var(--navbar-size) / 4);
+    }
     nav {
       display: flex;
       flex-direction: row;

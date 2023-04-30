@@ -37,7 +37,7 @@
       "message message"
       "none submit";
     grid-template-columns: 1 fr 1 fr;
-    grid-gap: 5px;
+    grid-gap: 5px; // TODO: remove px
     margin-bottom: 13px;
     margin-top: 13px;
     opacity: 0;
@@ -66,7 +66,7 @@
     }
     .message {
       grid-area: message;
-      height: 100px;
+      height: 100px; // TODO: remove px
     }
     .submit {
       grid-area: submit;

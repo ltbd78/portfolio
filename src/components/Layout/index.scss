@@ -18,13 +18,21 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: fadeOut;
-    font-size: 26px;
+    font-size: var(--hamster-size);
     height: 12em;
-    left: calc(50% + var(--navbar-size) / 2);
     position: absolute;
-    top: 50%;
     transform: translate(-50%, -50%); /* uses div center as reference for positioning */
     width: 12em;
+
+    @media screen and (orientation: landscape) {
+      left: calc(50% + var(--navbar-size) / 2);
+      top: 50%;
+    }
+    @media screen and (orientation: portrait) {
+      left: 50%;
+      top: calc(50% + var(--navbar-size) / 2);
+    }
+
   }
   .page {
     align-items: center;
