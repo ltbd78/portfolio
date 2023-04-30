@@ -1,4 +1,7 @@
-- mobile optimization
+- fade in the html / body decorations
+- refactor --secondary-color to --nav-secondary --nav-primary
+
+
 - find unused packages
 - find solution for BrowserRouter 404 refresh
 - debug HashRouter basename URL (https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing)
