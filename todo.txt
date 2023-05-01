@@ -1,18 +1,17 @@
-- fade in the html / body decorations
+# High Prio
 - refactor --secondary-color to --nav-secondary --nav-primary
-- make logo a hidden easter egg
-- make hamster between body tags
-- 
-- find unused packages
-- find solution for BrowserRouter 404 refresh
-- debug HashRouter basename URL (https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing)
+
+# Medium Prio
 - animate L on hover
+- add svg animation
+- find unused packages
+- make logo a hidden easter egg
+
+# Low Prio
+- video game clips
 - add music
 - add youtube
 - add color wheel buttons
-- add svg animation
-- learn how to reverse animation (for envelope)
-- fix animation letter stuck (& remove delay variable)
-
 - personal violin music
-- video game clips
+- debug HashRouter basename URL (https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing)
+- find solution for BrowserRouter 404 refresh
