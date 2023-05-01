@@ -5,13 +5,12 @@
   min-height: 100svh; // needed for navbar
   height: max-content;
   min-width: var(--min-width); /* width when elements start shrinking, try nav? */
-  // width: 100svw; // don't set or body margin will be gone
+  // width: 100svw; // don't set or messes up body default margin
   @media screen and (orientation: landscape) {
     flex-direction: row;
   }
   @media screen and (orientation: portrait) {
     flex-direction: column;
-    // hide nav bar when scrolling downs
   }
   .wheel-and-hamster {
     --dur: 1s;
@@ -32,7 +31,6 @@
       left: 50%;
       top: calc(50% + var(--navbar-size) / 2);
     }
-
   }
   .page {
     align-items: center;
@@ -41,33 +39,31 @@
     grid-area: page;
     justify-content: space-between;
     .horizontal-bar {
-      align-items: center;
+      animation-delay: 1s;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-name: fadeIn;
+      animation-timing-function: ease-in-out;
       display: flex;
       height: max-content;
-      opacity: 1;
+      opacity: 0;
       overflow-y: hidden; /* text may exceed container */
       width: 100%;
       .tags {
-        animation-delay: 3s;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-name: glow;
-        animation-timing-function: ease-in-out;
         color: var(--accent-color);
         font-family: "La Belle Aurore";
         font-size: 2rem;
         margin-bottom: calc(var(--navbar-size) / 4);
-        margin-left: calc(var(--navbar-size) / 2);
+        margin-left: calc(var(--navbar-size) / 4);
         margin-top: calc(var(--navbar-size) / 4);
-        opacity: 0.5;
       }
     }
     article {
       // box-sizing: border-box; /* adds padding/border WxH; */
       display: flex;
       flex-direction: column;
-      margin-left: var(--navbar-size); /* in case width is too narrow */
-      margin-right: var(--navbar-size);
+      padding-left: calc(var(--navbar-size) / 4); /* in case width is too narrow */
+      padding-right: calc(var(--navbar-size) / 4);
       z-index: 0; /* must be at least 0 to be above parent containers */
     }
   }

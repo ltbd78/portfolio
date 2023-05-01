@@ -78,6 +78,7 @@
       height: calc(var(--navbar-size) / 2); /* width doesn't scale well and % changes */
     }
     .hamburger-menu {
+      cursor: pointer;
       margin: calc(var(--navbar-size) / 4);
     }
     nav {

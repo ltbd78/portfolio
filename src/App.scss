@@ -13,7 +13,7 @@ html {
   --secondary-color: #8d8d8d;
   font-size: min(2vw, 10px); /* for rem reference */
   body {
-    background: green;
+    background: green; // TODO: change to var(--background-color)
     font-family: "Helvetica Neue", "sans-serif";
     font-weight: 400;
     margin: 0; /* default margin is 8 */
