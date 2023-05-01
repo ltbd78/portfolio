@@ -1,3 +1,4 @@
+import "./envelope.scss";
 import "./index.scss";
 import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
@@ -5,7 +6,7 @@ import AnimatedLetters from "../AnimatedLetters";
 function Envelope() {
   // https://codepen.io/jakegilesphillips/pen/MveNLe
   return (
-    <div className="letter-image">
+    <div className="letter-container">
       <div className="animated-mail">
         <div className="back-fold"></div>
         <div className="letter">

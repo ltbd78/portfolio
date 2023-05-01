@@ -1,3 +1,4 @@
+import "./cube.scss";
 import "./index.scss";
 import { faCss3, faGitAlt, faHtml5, faJsSquare, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,24 +7,26 @@ import AnimatedLetters from "../AnimatedLetters";
 
 function Cube() {
   return (
-    <div className="cube">
-      <div className="front-face">
-        <FontAwesomeIcon icon={faPython} />
-      </div>
-      <div className="back-face">
-        <FontAwesomeIcon icon={faReact} />
-      </div>
-      <div className="left-face">
-        <FontAwesomeIcon icon={faGitAlt} />
-      </div>
-      <div className="right-face">
-        <FontAwesomeIcon icon={faHtml5} />
-      </div>
-      <div className="top-face">
-        <FontAwesomeIcon icon={faCss3} />
-      </div>
-      <div className="bottom-face">
-        <FontAwesomeIcon icon={faJsSquare} />
+    <div className="cube-container">
+      <div className="cube">
+        <div className="front-face">
+          <FontAwesomeIcon icon={faPython} />
+        </div>
+        <div className="back-face">
+          <FontAwesomeIcon icon={faReact} />
+        </div>
+        <div className="left-face">
+          <FontAwesomeIcon icon={faGitAlt} />
+        </div>
+        <div className="right-face">
+          <FontAwesomeIcon icon={faHtml5} />
+        </div>
+        <div className="top-face">
+          <FontAwesomeIcon icon={faCss3} />
+        </div>
+        <div className="bottom-face">
+          <FontAwesomeIcon icon={faJsSquare} />
+        </div>
       </div>
     </div>
   );
@@ -41,9 +44,7 @@ export default function About() {
           <h1>
             <AnimatedLetters strArray={"About Me".split("")} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
           </h1>
-          <div className="cube-container">
-            <Cube />
-          </div>
+          <Cube />
         </div>
         <p>
           Hello, I'm a data scientist currently living in NYC. I was born in Beijing, China, but flew to America when I was just three years old. My passion

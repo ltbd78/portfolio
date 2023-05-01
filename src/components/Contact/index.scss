@@ -1,22 +1,9 @@
-@import "./envelope.scss";
-
 .contact-page {
   .heading {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    .letter-image {
-      animation-delay: 2s;
-      animation-duration: 2s;
-      animation-fill-mode: forwards;
-      animation-name: fadeIn;
-      height: var(--letter-size);
-      margin: calc(var(--letter-size) / 5);
-      opacity: 0;
-      position: relative; /* so .shadow references this */
-      width: var(--letter-size);
-    }
   }
   p {
     animation-delay: 1.5s, 1.5s;

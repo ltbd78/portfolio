@@ -1,4 +1,5 @@
 # High Prio
+- fix envelop shadow overflow
 - refactor --secondary-color to --nav-secondary --nav-primary
 
 # Medium Prio

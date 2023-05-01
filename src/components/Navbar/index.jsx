@@ -3,8 +3,8 @@ import { faEnvelope, faHome, faUser, faBars } from "@fortawesome/free-solid-svg-
 import { faLinkedin, faGithub, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
-import LogoL from "../../assets/images/logo-l.png";
 import { useState } from "react";
+import LogoL from "../../assets/images/logo-l.png";
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(true);
