@@ -4,6 +4,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 
+function Cube() {
+  return (
+    <div className="cube">
+      <div className="front-face">
+        <FontAwesomeIcon icon={faPython} />
+      </div>
+      <div className="back-face">
+        <FontAwesomeIcon icon={faReact} />
+      </div>
+      <div className="left-face">
+        <FontAwesomeIcon icon={faGitAlt} />
+      </div>
+      <div className="right-face">
+        <FontAwesomeIcon icon={faHtml5} />
+      </div>
+      <div className="top-face">
+        <FontAwesomeIcon icon={faCss3} />
+      </div>
+      <div className="bottom-face">
+        <FontAwesomeIcon icon={faJsSquare} />
+      </div>
+    </div>
+  );
+}
+
 export default function About() {
   const [initialClass, setInitialClass] = useState("initial-animation");
   const [hoverClass, setHoverClass] = useState("");
@@ -17,26 +42,7 @@ export default function About() {
             <AnimatedLetters strArray={"About Me".split("")} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
           </h1>
           <div className="cube-container">
-            <div className="cube">
-              <div className="front-face">
-                <FontAwesomeIcon icon={faPython} />
-              </div>
-              <div className="back-face">
-                <FontAwesomeIcon icon={faReact} />
-              </div>
-              <div className="left-face">
-                <FontAwesomeIcon icon={faGitAlt} />
-              </div>
-              <div className="right-face">
-                <FontAwesomeIcon icon={faHtml5} />
-              </div>
-              <div className="top-face">
-                <FontAwesomeIcon icon={faCss3} />
-              </div>
-              <div className="bottom-face">
-                <FontAwesomeIcon icon={faJsSquare} />
-              </div>
-            </div>
+            <Cube />
           </div>
         </div>
         <p>
