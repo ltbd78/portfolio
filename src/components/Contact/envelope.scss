@@ -110,7 +110,7 @@
     top: var(--letter-size);
     transform: translateX(-50%);
     transition: 0.4s;
-    width: calc(2 * var(--letter-size));
+    width: var(--letter-size);
   }
   &:hover {
     .animated-mail {
