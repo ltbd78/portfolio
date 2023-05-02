@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://ltbd78.github.io/portfolio/static/css/main.2adeb32d.css",
+    "main.css": "https://ltbd78.github.io/portfolio/static/css/main.4879dfe9.css",
     "main.js": "https://ltbd78.github.io/portfolio/static/js/main.8505287c.js",
     "static/js/496.1ebda612.chunk.js": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js",
     "static/media/PressStart2P-Regular.ttf": "https://ltbd78.github.io/portfolio/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
@@ -9,12 +9,12 @@
     "static/media/LaBelleAurore.woff2": "https://ltbd78.github.io/portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "https://ltbd78.github.io/portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "https://ltbd78.github.io/portfolio/index.html",
-    "main.2adeb32d.css.map": "https://ltbd78.github.io/portfolio/static/css/main.2adeb32d.css.map",
+    "main.4879dfe9.css.map": "https://ltbd78.github.io/portfolio/static/css/main.4879dfe9.css.map",
     "main.8505287c.js.map": "https://ltbd78.github.io/portfolio/static/js/main.8505287c.js.map",
     "496.1ebda612.chunk.js.map": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2adeb32d.css",
+    "static/css/main.4879dfe9.css",
     "static/js/main.8505287c.js"
   ]
 }
