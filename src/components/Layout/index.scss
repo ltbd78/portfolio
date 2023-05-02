@@ -22,7 +22,6 @@
     position: absolute;
     transform: translate(-50%, -50%); /* uses div center as reference for positioning */
     width: 12em;
-
     @media screen and (orientation: landscape) {
       left: calc(50% + var(--navbar-size) / 2);
       top: 50%;
@@ -59,12 +58,13 @@
       }
     }
     article {
-      // box-sizing: border-box; /* adds padding/border WxH; */
+      box-sizing: border-box; /* adds padding/border WxH; */
+      // margin/padding causes visual glitches on mobile
       display: flex;
       flex-direction: column;
-      padding-left: calc(var(--navbar-size) / 4); /* in case width is too narrow */
-      padding-right: calc(var(--navbar-size) / 4);
       z-index: 0; /* must be at least 0 to be above parent containers */
+      align-items: center;
+      justify-content: center;
     }
   }
 }

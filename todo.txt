@@ -1,5 +1,5 @@
 # High Prio
-- fix envelop shadow overflow
+- fix margin/padding on article overflow
 - refactor --secondary-color to --nav-secondary --nav-primary
 
 # Medium Prio

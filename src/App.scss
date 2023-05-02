@@ -18,28 +18,31 @@ html {
     font-weight: 400;
     margin: 0; /* default margin is 8 */
     h1 {
+      // margin: 1rem;
+      // padding: 1rem;
       color: var(--primary-color);
       font-family: "Coolvetica";
       font-size: 5.2rem;
       font-weight: 400;
       letter-spacing: 1px;
-      margin: 1rem;
     }
     h2 {
+      // margin: 1rem;
+      // padding: 1rem;
       color: var(--secondary-color);
       font-family: sans-serif;
       font-size: 1.3rem;
       font-weight: 400;
-      letter-spacing: 3px;
-      margin: 1rem;
+      letter-spacing: 2px;
     }
     p {
+      // margin: 1rem;
+      // padding: 1rem;
       color: var(--secondary-color);
       font-family: sans-serif;
       font-size: 1.3rem;
       font-weight: 300;
       letter-spacing: 1px;
-      margin: 1rem;
     }
   }
 }
