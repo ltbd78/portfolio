@@ -2,8 +2,8 @@
   background: var(--background-color);
   color: var(--primary-color);
   display: flex;
-  min-height: 100svh; // needed for navbar
   height: max-content;
+  min-height: 100svh;
   min-width: var(--min-width); /* width when elements start shrinking, try nav? */
   // width: 100svw; // don't set or messes up body default margin
   @media screen and (orientation: landscape) {
@@ -58,13 +58,13 @@
       }
     }
     article {
+      align-items: center;
       box-sizing: border-box; /* adds padding/border WxH; */
-      // margin/padding causes visual glitches on mobile
       display: flex;
       flex-direction: column;
-      z-index: 0; /* must be at least 0 to be above parent containers */
-      align-items: center;
       justify-content: center;
+      margin: var(--navbar-size);
+      z-index: 0; /* must be at least 0 to be above parent containers */
     }
   }
 }

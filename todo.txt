@@ -1,12 +1,16 @@
 # High Prio
 - fix margin/padding on article overflow
 - refactor --secondary-color to --nav-secondary --nav-primary
+- ensure paragraph work first
+- double check ensure everything is rem
+
 
 # Medium Prio
 - animate L on hover
 - add svg animation
 - find unused packages
 - make logo a hidden easter egg
+
 
 # Low Prio
 - video game clips

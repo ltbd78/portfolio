@@ -9,7 +9,7 @@ export default function Layout() {
     <div className="App">
       <Navbar />
       <HamsterLoader key={location.key} />
-      <div className="page" key={location.key}>
+      <div className="page" key={location.key + 1}>
         <header className="horizontal-bar">
           <div className="tags">
             &lt;html&gt;

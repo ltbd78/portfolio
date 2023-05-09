@@ -3,10 +3,10 @@
 html {
   --accent-color: #ffd700;
   --background-color: #022c43;
-  --cube-size: 100px;
-  --hamster-size: 26px;
-  --letter-size: 100px;
-  --min-width: 320px;
+  --cube-size: 10rem;
+  --hamster-size: 2.6rem;
+  --letter-size: 10rem;
+  --min-width: 100px;
   --nav-bar-color: #181818;
   --navbar-size: 52px;
   --primary-color: #e5e4e2;
@@ -16,7 +16,7 @@ html {
     background: green; // TODO: change to var(--background-color)
     font-family: "Helvetica Neue", "sans-serif";
     font-weight: 400;
-    margin: 0; /* default margin is 8 */
+    // margin: 0; /* default margin is 8 */
     h1 {
       // margin: 1rem;
       // padding: 1rem;
