@@ -1,9 +1,5 @@
 # High Prio
-- fix margin/padding on article overflow
 - refactor --secondary-color to --nav-secondary --nav-primary
-- ensure paragraph work first
-- double check ensure everything is rem
-
 
 # Medium Prio
 - animate L on hover

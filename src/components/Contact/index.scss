@@ -18,47 +18,27 @@
     animation-duration: 1s, 1s;
     animation-fill-mode: forwards, forwards;
     animation-name: fadeIn, pulse;
-    display: grid;
-    grid-template-areas:
-      "name email"
-      "subject subject"
-      "message message"
-      "none submit";
-    grid-template-columns: 1 fr 1 fr;
-    grid-gap: 0.5rem; // TODO: remove px
-    margin-bottom: 1.3rem;
-    margin-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
     opacity: 0;
-    input,
-    textarea {
-      // background-color: ;
-      // border-color: var(--primary-color);
-      // border-style: solid;
-      // border-width: 1px;
-      // box-shadow: 0 0 4px 0px var(--accent-color);
-      // color: var(--primary-color);
-      // font-family: sans-serif;
-      // font-size: 1.3rem;
-      // margin: 5px;
-      // min-height: 26px;
-      // width: auto;
-    }
-    .name {
-      grid-area: name;
-    }
-    .email {
-      grid-area: email;
-    }
-    .subject {
-      grid-area: subject;
+    width: 100%;
+    input, textarea {
+      background-color: var(--primary-color);
+      border-color: var(--secondary-color);
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: 0 0 1rem 0px var(--secondary-color);
+      font-family: sans-serif;
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      min-height: 2rem;
     }
     .message {
-      grid-area: message;
-      height: 100px; // TODO: remove px
+      height: 13rem;
+      resize: vertical;
     }
     .submit {
-      grid-area: submit;
-      margin-left: 50%;
+      margin-left: 75%;
     }
   }
 }

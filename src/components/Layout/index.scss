@@ -5,7 +5,7 @@
   height: max-content;
   min-height: 100svh;
   min-width: var(--min-width); /* width when elements start shrinking, try nav? */
-  // width: 100svw; // don't set or messes up body default margin
+  // width: 100svw; /* don't set or messes up body default margin */
   @media screen and (orientation: landscape) {
     flex-direction: row;
   }
