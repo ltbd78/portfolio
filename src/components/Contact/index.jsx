@@ -41,6 +41,8 @@ export default function Contact() {
       .sendForm("service_ltbd78", "template_ltbd78", form.current, "pJLqjN1xlGvSHyp9_")
       .then((result) => {
         console.log(result.text);
+        form.current.reset();
+        window.alert("Email sent successfully!");
       })
       .catch((error) => {
         console.log(error.text);
