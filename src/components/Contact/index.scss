@@ -22,7 +22,8 @@
     flex-direction: column;
     opacity: 0;
     width: 100%;
-    input, textarea {
+    input,
+    textarea {
       background-color: var(--primary-color);
       border-color: var(--secondary-color);
       border-style: solid;

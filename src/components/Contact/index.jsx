@@ -1,7 +1,8 @@
 import "./envelope.scss";
 import "./index.scss";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import AnimatedLetters from "../AnimatedLetters";
+import emailjs from "@emailjs/browser";
 
 function Envelope() {
   // https://codepen.io/jakegilesphillips/pen/MveNLe
@@ -29,8 +30,23 @@ function Envelope() {
 export default function Contact() {
   const [initialClass, setInitialClass] = useState("initial-animation");
   const [hoverClass, setHoverClass] = useState("");
+  const form = useRef();
+
   setTimeout(() => setInitialClass(""), 2000);
   setTimeout(() => setHoverClass("hover-animation"), 2000);
+
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm("service_ltbd78", "template_ltbd78", form.current, "pJLqjN1xlGvSHyp9_")
+      .then((result) => {
+        console.log(result.text);
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
+  }
+
   return (
     <>
       <article className="contact-page">
@@ -41,7 +57,8 @@ export default function Contact() {
           <Envelope />
         </div>
         <p>Please do not hesitate to use the form below to get in touch with me if you have any inquires or requests.</p>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
+          {/* name="foo" will be referenced as {{foo}} in the emailjs template */}
           <input className="name" type="text" placeholder="Name" name="name" required />
           <input className="email" type="email" placeholder="Email" name="email" required />
           <input className="subject" type="text" placeholder="Subject" name="subject" />

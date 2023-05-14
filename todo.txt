@@ -7,9 +7,9 @@
 - find unused packages
 - make logo a hidden easter egg
 
-
 # Low Prio
 - video game clips
+- add starfield
 - add music
 - add youtube
 - add color wheel buttons
