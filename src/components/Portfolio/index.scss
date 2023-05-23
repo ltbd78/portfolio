@@ -1,0 +1,71 @@
+.portfolio-page {
+  .heading {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    .portfolio-GIF {
+      animation-delay: 2s;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+      animation-name: fadeIn;
+      border-radius: 2rem;
+      opacity: 0;
+      width: 6rem;
+    }
+  }
+  .works {
+    // background-color: orange; // for debugging
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .work {
+      align-items: center;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-name: fadeIn;
+      background-color: cyan;
+      border-radius: 3.9rem;
+      display: flex;
+      flex-direction: column;
+      height: 26rem;
+      justify-content: flex-end;
+      margin: 1rem;
+      opacity: 0;
+      position: relative; /* anchor */
+      width: 26rem;
+      @for $i from 1 through 100 {
+        &:nth-child(#{$i}) {
+          animation-delay: #{calc(2 + $i/3)}s;
+        }
+      }
+      img {
+        border-radius: inherit;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+      }
+      .title {
+        background-color: darkslategray;
+        box-sizing: border-box; /* so it doesn't overflow container */
+        color: black;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        z-index: 2;
+      }
+      .description {
+        background-color: darkslategray;
+        box-sizing: border-box; /* so it doesn't overflow container */
+        color: black;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        z-index: 2;
+      }
+    }
+  }
+}
