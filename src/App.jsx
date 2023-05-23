@@ -4,6 +4,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Layout from "./components/Layout";
+import Portfolio from "./components/Portfolio";
 
 // Deprecated solution; replaced by useLocation() in Layout; keep template for future usecases
 // import HamsterLoader from "./components/Loader";
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="portfolio" element={<Portfolio />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>

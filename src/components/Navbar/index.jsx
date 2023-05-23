@@ -1,5 +1,5 @@
 import "./index.scss";
-import { faEnvelope, faHome, faUser, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHome, faUser, faBriefcase, faBars } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
@@ -19,6 +19,10 @@ export default function Navbar() {
         <NavLink className="about-link" to="about">
           <FontAwesomeIcon icon={faUser} />
           <span className="link-text">ABOUT</span>
+        </NavLink>
+        <NavLink className="portfolio-link" to="portfolio">
+          <FontAwesomeIcon icon={faBriefcase} />
+          <span className="link-text">Portfolio</span>
         </NavLink>
         <NavLink className="contact-link" to="contact">
           <FontAwesomeIcon icon={faEnvelope} />
