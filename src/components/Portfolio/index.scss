@@ -3,16 +3,22 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
-    .portfolio-GIF {
-      animation-delay: 2s;
-      animation-duration: 3s;
-      animation-fill-mode: forwards;
-      animation-name: fadeIn;
+    .image-container { /* for cropping */
       border-radius: 2rem;
-      opacity: 0;
-      width: 6rem;
+      height: 10rem;
+      overflow: hidden;
+      width: 10rem;
+      .portfolio-GIF {
+        animation-delay: 2s;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-name: fadeIn;
+        opacity: 0;
+        transform: translateX(-23%) translateY(-17%);
+        width: 20rem;
+      }
     }
   }
   .works {
@@ -34,7 +40,8 @@
       justify-content: flex-end;
       margin: 1rem;
       opacity: 0;
-      position: relative; /* anchor */
+      overflow: hidden; /* cut the text*/
+      position: relative; /* anchor for img */
       width: 26rem;
       @for $i from 1 through 100 {
         &:nth-child(#{$i}) {
@@ -48,23 +55,42 @@
         position: absolute;
         z-index: 1;
       }
-      .title {
-        background-color: darkslategray;
+      .text-box {
+        // transform: translateY(75%);
+        align-items: center;
         box-sizing: border-box; /* so it doesn't overflow container */
-        color: black;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
         padding-left: 1rem;
         padding-right: 1rem;
+        transition: 0.5s;
         width: 100%;
         z-index: 2;
-      }
-      .description {
-        background-color: darkslategray;
-        box-sizing: border-box; /* so it doesn't overflow container */
-        color: black;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        width: 100%;
-        z-index: 2;
+        &:hover {
+          transition: 0.5s;
+          // transform: translateY(-5rem);
+          background-color: black;
+          color: white;
+          opacity: 0.78;
+        }
+        .blank { // TODO: make it so hovering over image also pulls it up (may need pseudo box)
+          height: 50%;
+          opacity: 1;
+          width: 50%;
+        } // may need another container for .title and .desc that shares bg and color
+        .title {
+          background-color: black;
+          color: white;
+          font-size: 1.3rem;
+          opacity: 0.5;
+        }
+        .description {
+          background-color: black;
+          color: white;
+          opacity: 0.5;
+        }
       }
     }
   }
