@@ -5,7 +5,8 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    .image-container { /* for cropping */
+    .image-container {
+      /* for cropping */
       border-radius: 2rem;
       height: 10rem;
       overflow: hidden;
@@ -32,7 +33,6 @@
       animation-duration: 2s;
       animation-fill-mode: forwards;
       animation-name: fadeIn;
-      background-color: cyan;
       border-radius: 3.9rem;
       display: flex;
       flex-direction: column;
@@ -42,6 +42,7 @@
       opacity: 0;
       overflow: hidden; /* cut the text*/
       position: relative; /* anchor for img */
+      text-decoration: none;
       width: 26rem;
       @for $i from 1 through 100 {
         &:nth-child(#{$i}) {
@@ -56,13 +57,15 @@
         z-index: 1;
       }
       .text-box {
-        // transform: translateY(75%);
         align-items: center;
+        background-color: black;
         box-sizing: border-box; /* so it doesn't overflow container */
+        color: white;
         display: flex;
         flex-direction: column;
         height: 100%;
-        justify-content: flex-end;
+        justify-content: center;
+        opacity: 0.78;
         padding-left: 1rem;
         padding-right: 1rem;
         transition: 0.5s;
@@ -70,26 +73,13 @@
         z-index: 2;
         &:hover {
           transition: 0.5s;
-          // transform: translateY(-5rem);
-          background-color: black;
-          color: white;
-          opacity: 0.78;
+          opacity: 0;
         }
-        .blank { // TODO: make it so hovering over image also pulls it up (may need pseudo box)
-          height: 50%;
-          opacity: 1;
-          width: 50%;
-        } // may need another container for .title and .desc that shares bg and color
         .title {
-          background-color: black;
-          color: white;
-          font-size: 1.3rem;
-          opacity: 0.5;
+          font-size: 2rem;
         }
         .description {
-          background-color: black;
-          color: white;
-          opacity: 0.5;
+          margin-top: 1rem;
         }
       }
     }

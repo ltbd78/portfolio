@@ -5,12 +5,11 @@ import portfolioGIF from "../../assets/portfolio/portfolio.gif";
 import RLGIF from "../../assets/portfolio/rl.gif";
 
 function Work({ href, src, title, description }) {
-  // if src is none use alternative text
+  // target="_blank" opens link in new tab
   return (
     <a className="work" href={href} target="_blank">
-      <img src={src} alt="portfolio-work" />
+      <img src={src} alt=" " />
       <div className="text-box">
-        <div className="blank"></div>
         <div className="title">{title}</div>
         <div className="description">{description}</div>
       </div>
@@ -19,6 +18,7 @@ function Work({ href, src, title, description }) {
 }
 
 export default function Portfolio() {
+  // TODO: do a see more
   const [initialClass, setInitialClass] = useState("initial-animation");
   const [hoverClass, setHoverClass] = useState("");
   setTimeout(() => setInitialClass(""), 2000);
@@ -30,7 +30,7 @@ export default function Portfolio() {
           <AnimatedLetters strArray={"Portfolio".split("")} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
         </h1>
         <div className="image-container">
-          <img className="portfolio-GIF" src={portfolioGIF} alt="portfolio-GIF"/>
+          <img className="portfolio-GIF" src={portfolioGIF} alt="portfolio-GIF" />
         </div>
       </div>
       <div className="works">
@@ -40,8 +40,6 @@ export default function Portfolio() {
           title={"Flexible Reinforcement Learning Framework"}
           description={"A flexible reinforcement learning framework that allows easy mix and matching of different agents and environments."}
         />
-        <Work />
-        <Work />
         <Work />
         <Work />
         <Work />
