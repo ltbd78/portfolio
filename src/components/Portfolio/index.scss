@@ -5,26 +5,28 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    .image-container {
-      /* for cropping */
+    .container-1 {
       animation-delay: 2s;
       animation-duration: 3s;
       animation-fill-mode: forwards;
       animation-name: fadeIn;
-      border-radius: 2rem;
-      height: 10rem;
       opacity: 0;
-      overflow: hidden;
-      width: 10rem;
       .circular-letters {
-        position: absolute;
         color: yellow;
         font-family: PressStart2P2;
+        position: absolute;
         transform: translateY(-30%) translateX(30%) rotate(13deg);
       }
-      .portfolio-GIF {
-        transform: translateX(-23%) translateY(-17%);
-        width: 20rem;
+      .container-2 {
+        /* for cropping */
+        border-radius: 2rem;
+        height: 10rem;
+        overflow: hidden;
+        width: 10rem;
+        .portfolio-GIF {
+          transform: translateX(-23%) translateY(-17%);
+          width: 20rem;
+        }
       }
     }
   }

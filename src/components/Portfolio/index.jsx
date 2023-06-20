@@ -39,9 +39,11 @@ export default function Portfolio() {
           <AnimatedLetters string={"Portfolio"} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
         </h1>
         <a href="https://docs.google.com/document/d/1Mft3IcrTTX2CjVCt529c-wBKWzdGWZmbLnhS_c5sf1A/edit?usp=sharing" target="_blank">
-          <div className="image-container">
+          <div className="container-1">
             <CircularLetters string={"CLICK FOR RESUME!"} length={"11rem"} />
-            <img className="portfolio-GIF" src={portfolioGIF} alt="portfolio-GIF" />
+            <div className="container-2">
+              <img className="portfolio-GIF" src={portfolioGIF} alt="portfolio-GIF" />
+            </div>
           </div>
         </a>
       </div>
