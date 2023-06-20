@@ -13,13 +13,13 @@ export default function Home() {
     <>
       <article className="home-page">
         <h1>
-          <AnimatedLetters strArray={"Hi,".split("")} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
+          <AnimatedLetters string={"Hi,"} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
           <br />
-          <AnimatedLetters strArray={"I'm".split("")} initialClass={initialClass} delay={13} hoverClass={hoverClass} />
+          <AnimatedLetters string={"I'm"} initialClass={initialClass} delay={13} hoverClass={hoverClass} />
           <img src={LogoTitle} alt="logo" />
-          <AnimatedLetters strArray={"insu Han".split("")} initialClass={initialClass} delay={16} hoverClass={hoverClass} />
+          <AnimatedLetters string={"insu Han"} initialClass={initialClass} delay={16} hoverClass={hoverClass} />
           <br />
-          <AnimatedLetters strArray={"Data Scientist".split("")} initialClass={initialClass} delay={24} hoverClass={hoverClass} />
+          <AnimatedLetters string={"Data Scientist"} initialClass={initialClass} delay={24} hoverClass={hoverClass} />
         </h1>
         <h2>Machine Learning Engineer / Statistician</h2>
         <Link to="/contact" className="contact-button">

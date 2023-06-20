@@ -42,7 +42,7 @@ export default function About() {
       <article className="about-page">
         <div className="heading">
           <h1>
-            <AnimatedLetters strArray={"About Me".split("")} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
+            <AnimatedLetters string={"About Me"} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
           </h1>
           <Cube />
         </div>

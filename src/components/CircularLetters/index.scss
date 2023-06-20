@@ -1,0 +1,14 @@
+.circular-letters {
+  span {
+    left: 0; /* default is not zero */
+    position: absolute;
+    top: 0; /* default is not zero */
+    transform-origin: bottom center;
+    width: 1rem;
+  }
+  @for $i from 0 through 100 {
+    .circular-letter.rotate#{$i} {
+      transform: rotate($i * 5deg);
+    }
+  }
+}

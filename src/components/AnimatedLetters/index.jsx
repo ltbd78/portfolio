@@ -1,7 +1,8 @@
 import "./index.scss";
 import { useState } from "react";
 
-export default function AnimatedLetters({ strArray, initialClass, delay, hoverClass }) {
+export default function AnimatedLetters({ string, initialClass, delay, hoverClass }) {
+  const strArray = string.split("");
   const [wasHovered, setWasHovered] = useState(Array(strArray.length).fill(false));
   function animateLetter(char, i) {
     const initialClass_ = initialClass === "" ? "" : ` ${initialClass} delay${i + delay}`;
@@ -19,11 +20,11 @@ export default function AnimatedLetters({ strArray, initialClass, delay, hoverCl
           newArray[i] = false;
           setWasHovered(newArray);
         }}
-        className={"letter" + initialClass_ + hoverClass_}
+        className={"animated-letter" + initialClass_ + hoverClass_}
       >
         {char}
       </span>
     );
   }
-  return <div className="letters">{strArray.map(animateLetter)}</div>;
+  return <div className="animated-letters">{strArray.map(animateLetter)}</div>;
 }

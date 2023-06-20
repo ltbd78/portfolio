@@ -1,6 +1,7 @@
 import "./index.scss";
 import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
+import CircularLetters from "../CircularLetters";
 import caePNG from "../../assets/portfolio/cae.png";
 import celebaGIF from "../../assets/portfolio/celeba.gif";
 import portfolioGIF from "../../assets/portfolio/portfolio.gif";
@@ -14,7 +15,6 @@ function Work({ href, src, title, description, width, height, transform }) {
     height: height,
     transform: transform
   };
-
   return (
     <a className="work" href={href} target="_blank">
       <img src={src} alt=" " style={imgStyle} />
@@ -36,11 +36,14 @@ export default function Portfolio() {
     <article className="portfolio-page">
       <div className="heading">
         <h1>
-          <AnimatedLetters strArray={"Portfolio".split("")} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
+          <AnimatedLetters string={"Portfolio"} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
         </h1>
-        <div className="image-container">
-          <img className="portfolio-GIF" src={portfolioGIF} alt="portfolio-GIF" />
-        </div>
+        <a href="https://docs.google.com/document/d/1Mft3IcrTTX2CjVCt529c-wBKWzdGWZmbLnhS_c5sf1A/edit?usp=sharing" target="_blank">
+          <div className="image-container">
+            <CircularLetters string={"CLICK FOR RESUME!"} length={"11rem"} />
+            <img className="portfolio-GIF" src={portfolioGIF} alt="portfolio-GIF" />
+          </div>
+        </a>
       </div>
       <div className="works">
         <Work

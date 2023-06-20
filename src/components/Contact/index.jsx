@@ -54,7 +54,7 @@ export default function Contact() {
       <article className="contact-page">
         <div className="heading">
           <h1>
-            <AnimatedLetters strArray={"Contact Me".split("")} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
+            <AnimatedLetters string={"Contact Me"} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
           </h1>
           <Envelope />
         </div>

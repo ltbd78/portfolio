@@ -7,16 +7,22 @@
     width: 100%;
     .image-container {
       /* for cropping */
+      animation-delay: 2s;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+      animation-name: fadeIn;
       border-radius: 2rem;
       height: 10rem;
+      opacity: 0;
       overflow: hidden;
       width: 10rem;
+      .circular-letters {
+        position: absolute;
+        color: yellow;
+        font-family: PressStart2P2;
+        transform: translateY(-30%) translateX(30%) rotate(13deg);
+      }
       .portfolio-GIF {
-        animation-delay: 2s;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
-        animation-name: fadeIn;
-        opacity: 0;
         transform: translateX(-23%) translateY(-17%);
         width: 20rem;
       }
@@ -71,9 +77,10 @@
           opacity: 0.26;
         }
         .title {
-          font-size: 2rem;
+          font-size: 2.6rem;
         }
         .description {
+          font-size: 1.3rem;
           margin-top: 1rem;
         }
       }
