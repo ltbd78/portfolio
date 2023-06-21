@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://ltbd78.github.io/portfolio/static/css/main.0223738a.css",
+    "main.css": "https://ltbd78.github.io/portfolio/static/css/main.a7cb2bd7.css",
     "main.js": "https://ltbd78.github.io/portfolio/static/js/main.3049e650.js",
     "static/js/496.1ebda612.chunk.js": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js",
     "static/media/celeba.gif": "https://ltbd78.github.io/portfolio/static/media/celeba.2988dc43f3d18e036c12.gif",
@@ -10,12 +10,12 @@
     "static/media/cae.png": "https://ltbd78.github.io/portfolio/static/media/cae.9204c6fbdbebd4b7139b.png",
     "static/media/logo-l.png": "https://ltbd78.github.io/portfolio/static/media/logo-l.d87db72f304db3bc10c6.png",
     "index.html": "https://ltbd78.github.io/portfolio/index.html",
-    "main.0223738a.css.map": "https://ltbd78.github.io/portfolio/static/css/main.0223738a.css.map",
+    "main.a7cb2bd7.css.map": "https://ltbd78.github.io/portfolio/static/css/main.a7cb2bd7.css.map",
     "main.3049e650.js.map": "https://ltbd78.github.io/portfolio/static/js/main.3049e650.js.map",
     "496.1ebda612.chunk.js.map": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0223738a.css",
+    "static/css/main.a7cb2bd7.css",
     "static/js/main.3049e650.js"
   ]
 }
