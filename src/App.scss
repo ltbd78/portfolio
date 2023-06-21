@@ -15,12 +15,12 @@ html {
   font-size: min(2vw, 10px); /* for rem reference */
   body {
     background: var(--background-color);
-    font-family: "Helvetica Neue", "sans-serif";
+    font-family: "Helvetica Neue", sans-serif;
     font-weight: 400;
     margin: 0; /* default margin is 8 */
     h1 {
       color: var(--primary-color);
-      font-family: "Coolvetica";
+      font-family: "Coolvetica", cursive;
       font-size: 5.2rem;
       font-weight: 400;
       letter-spacing: 1px;
