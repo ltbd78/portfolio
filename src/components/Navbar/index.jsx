@@ -22,7 +22,7 @@ export default function Navbar() {
         </NavLink>
         <NavLink className="portfolio-link" to="portfolio">
           <FontAwesomeIcon icon={faBriefcase} />
-          <span className="link-text">Portfolio</span>
+          <span className="link-text">PORTFOLIO</span>
         </NavLink>
         <NavLink className="contact-link" to="contact">
           <FontAwesomeIcon icon={faEnvelope} />
