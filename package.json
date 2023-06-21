@@ -31,7 +31,7 @@
   },
   "scripts": {
     "build": "react-scripts build --entry ./src/index.jsx",
-    "deploy": "npx gh-pages -b gh-pages -d build",
+    "deploy": "npx gh-pages -b gh-pages -d build --dotfiles",
     "eject": "react-scripts eject",
     "postbuild": "copy CNAME build\\CNAME",
     "predeploy": "npm run build",
