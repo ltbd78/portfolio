@@ -31,6 +31,12 @@
       top: calc(50% + var(--navbar-size) / 2);
     }
   }
+  .music {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    z-index: 3;
+  }
   .page {
     align-items: center;
     display: flex;
