@@ -1,25 +1,31 @@
 {
   "files": {
-    "main.css": "https://ltbd78.github.io/portfolio/static/css/main.51a05fc2.css",
-    "main.js": "https://ltbd78.github.io/portfolio/static/js/main.efb33002.js",
+    "main.css": "https://ltbd78.github.io/portfolio/static/css/main.b51f0e1c.css",
+    "main.js": "https://ltbd78.github.io/portfolio/static/js/main.f490d8a4.js",
     "static/js/496.1ebda612.chunk.js": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js",
+    "static/media/shelter (piano).mp3": "https://ltbd78.github.io/portfolio/static/media/shelter (piano).685877a8fa3c24daf2ce.mp3",
     "static/media/celeba.gif": "https://ltbd78.github.io/portfolio/static/media/celeba.2988dc43f3d18e036c12.gif",
     "static/media/rl.gif": "https://ltbd78.github.io/portfolio/static/media/rl.0eeac066701ecbc02ff2.gif",
+    "static/media/up.mp3": "https://ltbd78.github.io/portfolio/static/media/up.4d4eab48c09744ff2784.mp3",
+    "static/media/same squad.mp3": "https://ltbd78.github.io/portfolio/static/media/same squad.8af7d074b17342025819.mp3",
     "static/media/portfolio.gif": "https://ltbd78.github.io/portfolio/static/media/portfolio.120c971b37404c817f57.gif",
     "static/media/site.gif": "https://ltbd78.github.io/portfolio/static/media/site.06d90c8be56ee1bc0276.gif",
+    "static/media/sample-9s.mp3": "https://ltbd78.github.io/portfolio/static/media/sample-9s.20659d7cb47d1fbe342b.mp3",
     "static/media/PressStart2P-Regular.ttf": "https://ltbd78.github.io/portfolio/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
+    "static/media/sample-6s.mp3": "https://ltbd78.github.io/portfolio/static/media/sample-6s.0d5059800ba92e533ffc.mp3",
     "static/media/cae.png": "https://ltbd78.github.io/portfolio/static/media/cae.9204c6fbdbebd4b7139b.png",
+    "static/media/sample-3s.mp3": "https://ltbd78.github.io/portfolio/static/media/sample-3s.68e9be0168d87b9d956e.mp3",
     "static/media/logo-l.png": "https://ltbd78.github.io/portfolio/static/media/logo-l.d87db72f304db3bc10c6.png",
     "static/media/helvetica-neue.ttf": "https://ltbd78.github.io/portfolio/static/media/helvetica-neue.8a19678078a6b21c8057.ttf",
     "static/media/LaBelleAurore.woff2": "https://ltbd78.github.io/portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "https://ltbd78.github.io/portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "https://ltbd78.github.io/portfolio/index.html",
-    "main.51a05fc2.css.map": "https://ltbd78.github.io/portfolio/static/css/main.51a05fc2.css.map",
-    "main.efb33002.js.map": "https://ltbd78.github.io/portfolio/static/js/main.efb33002.js.map",
+    "main.b51f0e1c.css.map": "https://ltbd78.github.io/portfolio/static/css/main.b51f0e1c.css.map",
+    "main.f490d8a4.js.map": "https://ltbd78.github.io/portfolio/static/js/main.f490d8a4.js.map",
     "496.1ebda612.chunk.js.map": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51a05fc2.css",
-    "static/js/main.efb33002.js"
+    "static/css/main.b51f0e1c.css",
+    "static/js/main.f490d8a4.js"
   ]
 }
