@@ -1,12 +1,12 @@
 import { useState, useRef, useEffect } from "react";
 import "./index.scss";
 
-export default function Music({ songs }) {
+export default function MusicPlayer({ songs }) {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
 
-  // runs function whenever items in list change
+  // runs function whenever currentSongIndex updates
   useEffect(() => {
     const audio = audioRef.current;
     audio.pause();
@@ -20,7 +20,7 @@ export default function Music({ songs }) {
     const audio = audioRef.current;
     audio.addEventListener("ended", playNext);
     return () => {
-      audio.removeEventListener("ended", playNext);
+      audio.removeEventListener("ended", playNext); // runs whenever currentSongIndex updates
     };
   }, [currentSongIndex]);
 
@@ -47,13 +47,17 @@ export default function Music({ songs }) {
   }
 
   return (
-    <div className="music">
-      {songs[currentSongIndex]["artist"]} - {songs[currentSongIndex]["title"]}
+    <div className="music-player">
       <audio ref={audioRef} src={songs[currentSongIndex]["src"]} />
+      <div className="song-info">
+        <div className="scrolling-text">
+          {songs[currentSongIndex]["artist"]} - {songs[currentSongIndex]["title"]}
+        </div>
+      </div>
       <div className="controls">
-        <button onClick={playPrevious}>{"\u23EA"}</button>
-        <button onClick={togglePlay}>{isPlaying ? "\u23F8" : "\u23F5"}</button>
-        <button onClick={playNext}>{"\u23E9"}</button>
+        <button onClick={playPrevious} className="previous" />
+        <button onClick={togglePlay} className={isPlaying ? "pause" : "play"} />
+        <button onClick={playNext} className="next" />
       </div>
     </div>
   );

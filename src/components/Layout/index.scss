@@ -31,11 +31,11 @@
       top: calc(50% + var(--navbar-size) / 2);
     }
   }
-  .music {
+  .music-player {
     position: fixed;
     bottom: 0%;
     right: 0%;
-    z-index: 3;
+    z-index: 2;
   }
   .page {
     align-items: center;
