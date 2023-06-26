@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "https://ltbd78.github.io/portfolio/static/css/main.732c4ec2.css",
-    "main.js": "https://ltbd78.github.io/portfolio/static/js/main.cc510493.js",
+    "main.css": "https://ltbd78.github.io/portfolio/static/css/main.c2db49ba.css",
+    "main.js": "https://ltbd78.github.io/portfolio/static/js/main.a721864a.js",
     "static/js/496.1ebda612.chunk.js": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js",
-    "static/media/shelter (piano).mp3": "https://ltbd78.github.io/portfolio/static/media/shelter (piano).685877a8fa3c24daf2ce.mp3",
+    "static/media/Porter Robinson - Shelter (piano).mp3": "https://ltbd78.github.io/portfolio/static/media/Porter Robinson - Shelter (piano).685877a8fa3c24daf2ce.mp3",
+    "static/media/POWERS - Sunshine.mp3": "https://ltbd78.github.io/portfolio/static/media/POWERS - Sunshine.3d42e65ac4800807bfa4.mp3",
+    "static/media/Station Earth & Roos Denayer - Cold Green Eyes.mp3": "https://ltbd78.github.io/portfolio/static/media/Station Earth & Roos Denayer - Cold Green Eyes.ec8575dd1838de012898.mp3",
+    "static/media/아이콘 - LOVE SCENARIO.mp3": "https://ltbd78.github.io/portfolio/static/media/아이콘 - LOVE SCENARIO.5df8a4ebafcd13945ff9.mp3",
+    "static/media/Khalid - Young Dumb & Broke.mp3": "https://ltbd78.github.io/portfolio/static/media/Khalid - Young Dumb & Broke.53f544bb02b07bca9c49.mp3",
+    "static/media/Justin Bieber - Available.mp3": "https://ltbd78.github.io/portfolio/static/media/Justin Bieber - Available.9e35d08990eb88d4d367.mp3",
+    "static/media/Travie McCoy - Billionaire (feat. Bruno Mars).mp3": "https://ltbd78.github.io/portfolio/static/media/Travie McCoy - Billionaire (feat. Bruno Mars).fc419039dc9d88873919.mp3",
     "static/media/celeba.gif": "https://ltbd78.github.io/portfolio/static/media/celeba.2988dc43f3d18e036c12.gif",
+    "static/media/Shawn Wasabi - Mango Love.mp3": "https://ltbd78.github.io/portfolio/static/media/Shawn Wasabi - Mango Love.30e5a263e7e25150a8f6.mp3",
+    "static/media/Zoology - Maroon.mp3": "https://ltbd78.github.io/portfolio/static/media/Zoology - Maroon.4972629e02392a7bc12b.mp3",
+    "static/media/tsubi club - burbank house.mp3": "https://ltbd78.github.io/portfolio/static/media/tsubi club - burbank house.f0eafce7a5ffce70dfd7.mp3",
+    "static/media/re6ce - cabin fever.mp3": "https://ltbd78.github.io/portfolio/static/media/re6ce - cabin fever.2a69bce101dcb0d32ede.mp3",
     "static/media/rl.gif": "https://ltbd78.github.io/portfolio/static/media/rl.0eeac066701ecbc02ff2.gif",
-    "static/media/up.mp3": "https://ltbd78.github.io/portfolio/static/media/up.4d4eab48c09744ff2784.mp3",
-    "static/media/same squad.mp3": "https://ltbd78.github.io/portfolio/static/media/same squad.8af7d074b17342025819.mp3",
     "static/media/portfolio.gif": "https://ltbd78.github.io/portfolio/static/media/portfolio.120c971b37404c817f57.gif",
     "static/media/site.gif": "https://ltbd78.github.io/portfolio/static/media/site.06d90c8be56ee1bc0276.gif",
     "static/media/PressStart2P-Regular.ttf": "https://ltbd78.github.io/portfolio/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
@@ -17,12 +25,12 @@
     "static/media/LaBelleAurore.woff2": "https://ltbd78.github.io/portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "https://ltbd78.github.io/portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "https://ltbd78.github.io/portfolio/index.html",
-    "main.732c4ec2.css.map": "https://ltbd78.github.io/portfolio/static/css/main.732c4ec2.css.map",
-    "main.cc510493.js.map": "https://ltbd78.github.io/portfolio/static/js/main.cc510493.js.map",
+    "main.c2db49ba.css.map": "https://ltbd78.github.io/portfolio/static/css/main.c2db49ba.css.map",
+    "main.a721864a.js.map": "https://ltbd78.github.io/portfolio/static/js/main.a721864a.js.map",
     "496.1ebda612.chunk.js.map": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.732c4ec2.css",
-    "static/js/main.cc510493.js"
+    "static/css/main.c2db49ba.css",
+    "static/js/main.a721864a.js"
   ]
 }
