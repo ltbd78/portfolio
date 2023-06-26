@@ -2,7 +2,7 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
-import LogoTitle from "../../assets/images/logo-l.png";
+import pngLogo from "../../assets/images/logo-l.png";
 
 export default function Home() {
   const [initialClass, setInitialClass] = useState("initial-animation");
@@ -16,7 +16,7 @@ export default function Home() {
           <AnimatedLetters string={"Hi,"} initialClass={initialClass} delay={10} hoverClass={hoverClass} />
           <br />
           <AnimatedLetters string={"I'm"} initialClass={initialClass} delay={13} hoverClass={hoverClass} />
-          <img src={LogoTitle} alt="logo" />
+          <img src={pngLogo} alt="logo" />
           <AnimatedLetters string={"insu Han"} initialClass={initialClass} delay={16} hoverClass={hoverClass} />
           <br />
           <AnimatedLetters string={"Data Scientist"} initialClass={initialClass} delay={24} hoverClass={hoverClass} />

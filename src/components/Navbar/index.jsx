@@ -4,13 +4,13 @@ import { faLinkedin, faGithub, faTiktok, faInstagram } from "@fortawesome/free-b
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import LogoL from "../../assets/images/logo-l.png";
+import pngLogo from "../../assets/images/logo-l.png";
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(true);
   return (
     <div className="nav-bar">
-      <img src={LogoL} className="logo" alt="logo" />
+      <img src={pngLogo} className="logo" alt="logo" />
       <nav className={toggle ? "pages" : "pages inactive"}>
         <NavLink className="home-link" to="/">
           <FontAwesomeIcon icon={faHome} />

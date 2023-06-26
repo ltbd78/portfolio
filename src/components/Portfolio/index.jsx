@@ -2,11 +2,11 @@ import "./index.scss";
 import { useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import CircularLetters from "../CircularLetters";
-import caePNG from "../../assets/portfolio/cae.png";
-import celebaGIF from "../../assets/portfolio/celeba.gif";
-import portfolioGIF from "../../assets/portfolio/portfolio.gif";
-import RLGIF from "../../assets/portfolio/rl.gif";
-import siteGIF from "../../assets/portfolio/site.gif";
+import gifCeleba from "../../assets/portfolio/celeba.gif";
+import gifPortfolio from "../../assets/portfolio/portfolio.gif";
+import gifRL from "../../assets/portfolio/rl.gif";
+import gifSite from "../../assets/portfolio/site.gif";
+import pngCAE from "../../assets/portfolio/cae.png";
 
 function Work({ href, src, title, description, width, height, transform }) {
   // target="_blank" opens link in new tab
@@ -42,7 +42,7 @@ export default function Portfolio() {
           <div className="container-1">
             <CircularLetters string={"CLICK FOR RESUME!"} length={"11rem"} />
             <div className="container-2">
-              <img className="portfolio-GIF" src={portfolioGIF} alt="portfolio-GIF" />
+              <img className="portfolio-GIF" src={gifPortfolio} alt="portfolio-GIF" />
             </div>
           </div>
         </a>
@@ -50,7 +50,7 @@ export default function Portfolio() {
       <div className="works">
         <Work
           href={"https://github.com/ltbd78/RL"}
-          src={RLGIF}
+          src={gifRL}
           title={"Flexible Reinforcement Learning Framework"}
           description={"A flexible reinforcement learning framework that allows easy mix and matching of different agents and environments."}
           width={"100%"}
@@ -58,7 +58,7 @@ export default function Portfolio() {
         />
         <Work
           href={"https://github.com/ltbd78/facial-feature-detection"}
-          src={celebaGIF}
+          src={gifCeleba}
           title={"Facial Feature Detection"}
           description={"Flask hosted, real-time face detection & feature classification; ResNet model trained on CelebA dataset."}
           width={"200%"}
@@ -67,7 +67,7 @@ export default function Portfolio() {
         />
         <Work
           href={"https://github.com/ltbd78/cae"}
-          src={caePNG}
+          src={pngCAE}
           title={"Convolutional Autoencoder"}
           description={"Convolutional autoencoder used for image reconstruction and anomaly detection."}
           width={"100%"}
@@ -75,7 +75,7 @@ export default function Portfolio() {
         />
         <Work
           href={"https://github.com/ltbd78/portfolio"}
-          src={siteGIF}
+          src={gifSite}
           title={"Personal Portfolio Website"}
           description={"You're looking at the website right now! Click to see source code."}
           width={"100%"}
