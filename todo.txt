@@ -1,16 +1,16 @@
 # High Prio
-- refactor --secondary-color to --nav-secondary --nav-primary
+- fix hover animation
+- fix CORS issue (try import fonts different way?)
+- refactor colors to primary (60%), secondary (30%), accent (10%)
 
 # Medium Prio
 - animate L on hover
 - add svg animation
-- find unused packages
 - make logo a hidden easter egg
 
 # Low Prio
 - video game clips
 - add starfield
-- add music
 - add youtube
 - add color wheel buttons
 - personal violin music
