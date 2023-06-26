@@ -18,8 +18,8 @@ export const songs = [
   },
   {
     src: mp3Billionaire,
-    artist: "P-Lo",
-    title: "Same Squad"
+    artist: "Travie McCoy",
+    title: "Billionaire (feat. Bruno Mars)"
   },
   {
     src: mp3BurbankHouse,
