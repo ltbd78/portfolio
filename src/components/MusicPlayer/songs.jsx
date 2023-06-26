@@ -65,5 +65,5 @@ export const songs = [
     src: mp3YoungDumbBroke,
     artist: "Khalid",
     title: "Young Dumb & Broke"
-  },
+  }
 ];
