@@ -3,6 +3,8 @@ import mp3Billionaire from "../../assets/sounds/Travie McCoy - Billionaire (feat
 import mp3BurbankHouse from "../../assets/sounds/tsubi club - burbank house.mp3";
 import mp3CabinFever from "../../assets/sounds/re6ce - cabin fever.mp3";
 import mp3ColdGreenEyes from "../../assets/sounds/Station Earth & Roos Denayer - Cold Green Eyes.mp3";
+import mp3LoverBoy88 from "../../assets/sounds/Higher Brothers & Phum Viphurit - Lover Boy 88.mp3";
+import mp3LoverGirl88 from "../../assets/sounds/Calm姜鵬 & 很美味 - Lover Girl 88.mp3";
 import mp3LoveScenario from "../../assets/sounds/아이콘 - LOVE SCENARIO.mp3";
 import mp3MangoLove from "../../assets/sounds/Shawn Wasabi - Mango Love.mp3";
 import mp3Maroon from "../../assets/sounds/Zoology - Maroon.mp3";
@@ -12,14 +14,29 @@ import mp3YoungDumbBroke from "../../assets/sounds/Khalid - Young Dumb & Broke.m
 
 export const songs = [
   {
-    src: mp3Available,
-    artist: "Justin Bieber",
-    title: "Available"
+    src: mp3LoverBoy88,
+    artist: "Higher Brothers & Phum Viphurit",
+    title: "Lover Boy 88"
+  },
+  {
+    src: mp3LoverGirl88,
+    artist: "Calm姜鵬 & 很美味",
+    title: "Lover Girl 88"
+  },
+  {
+    src: mp3YoungDumbBroke,
+    artist: "Khalid",
+    title: "Young Dumb & Broke"
   },
   {
     src: mp3Billionaire,
     artist: "Travie McCoy",
     title: "Billionaire (feat. Bruno Mars)"
+  },
+  {
+    src: mp3Available,
+    artist: "Justin Bieber",
+    title: "Available"
   },
   {
     src: mp3BurbankHouse,
@@ -60,10 +77,5 @@ export const songs = [
     src: mp3Sunshine,
     artist: "POWERS",
     title: "Sunshine"
-  },
-  {
-    src: mp3YoungDumbBroke,
-    artist: "Khalid",
-    title: "Young Dumb & Broke"
   }
 ];

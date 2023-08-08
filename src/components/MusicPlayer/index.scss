@@ -1,6 +1,6 @@
 @keyframes scrolling {
   from {
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
   to {
     transform: translateX(-100%);
@@ -26,10 +26,11 @@
     white-space: nowrap; /* prevents text from starting new line*/
     width: 60%; /* caps the div size */
     .scrolling-text {
-      animation-duration: 6s;
+      animation-duration: 10s;
       animation-iteration-count: infinite;
       animation-name: scrolling;
       animation-timing-function: linear;
+      width: max-content; /* ensures div width equals text width so scroll doesn't end early */
     }
   }
   .controls {
