@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://ltbd78.github.io/portfolio/static/css/main.c2db49ba.css",
-    "main.js": "https://ltbd78.github.io/portfolio/static/js/main.664a8ea6.js",
+    "main.css": "https://ltbd78.github.io/portfolio/static/css/main.f8417732.css",
+    "main.js": "https://ltbd78.github.io/portfolio/static/js/main.a927a45d.js",
     "static/js/496.1ebda612.chunk.js": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js",
     "static/media/Porter Robinson - Shelter (piano).mp3": "https://ltbd78.github.io/portfolio/static/media/Porter Robinson - Shelter (piano).685877a8fa3c24daf2ce.mp3",
     "static/media/POWERS - Sunshine.mp3": "https://ltbd78.github.io/portfolio/static/media/POWERS - Sunshine.3d42e65ac4800807bfa4.mp3",
@@ -13,6 +13,8 @@
     "static/media/celeba.gif": "https://ltbd78.github.io/portfolio/static/media/celeba.2988dc43f3d18e036c12.gif",
     "static/media/Shawn Wasabi - Mango Love.mp3": "https://ltbd78.github.io/portfolio/static/media/Shawn Wasabi - Mango Love.30e5a263e7e25150a8f6.mp3",
     "static/media/Zoology - Maroon.mp3": "https://ltbd78.github.io/portfolio/static/media/Zoology - Maroon.4972629e02392a7bc12b.mp3",
+    "static/media/Higher Brothers & Phum Viphurit - Lover Boy 88.mp3": "https://ltbd78.github.io/portfolio/static/media/Higher Brothers & Phum Viphurit - Lover Boy 88.1bc79a4ba63c5f9fec12.mp3",
+    "static/media/Calm姜鵬 & 很美味 - Lover Girl 88.mp3": "https://ltbd78.github.io/portfolio/static/media/Calm姜鵬 & 很美味 - Lover Girl 88.2815ae6c771138d84188.mp3",
     "static/media/tsubi club - burbank house.mp3": "https://ltbd78.github.io/portfolio/static/media/tsubi club - burbank house.f0eafce7a5ffce70dfd7.mp3",
     "static/media/re6ce - cabin fever.mp3": "https://ltbd78.github.io/portfolio/static/media/re6ce - cabin fever.2a69bce101dcb0d32ede.mp3",
     "static/media/rl.gif": "https://ltbd78.github.io/portfolio/static/media/rl.0eeac066701ecbc02ff2.gif",
@@ -25,12 +27,12 @@
     "static/media/LaBelleAurore.woff2": "https://ltbd78.github.io/portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "https://ltbd78.github.io/portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "https://ltbd78.github.io/portfolio/index.html",
-    "main.c2db49ba.css.map": "https://ltbd78.github.io/portfolio/static/css/main.c2db49ba.css.map",
-    "main.664a8ea6.js.map": "https://ltbd78.github.io/portfolio/static/js/main.664a8ea6.js.map",
+    "main.f8417732.css.map": "https://ltbd78.github.io/portfolio/static/css/main.f8417732.css.map",
+    "main.a927a45d.js.map": "https://ltbd78.github.io/portfolio/static/js/main.a927a45d.js.map",
     "496.1ebda612.chunk.js.map": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2db49ba.css",
-    "static/js/main.664a8ea6.js"
+    "static/css/main.f8417732.css",
+    "static/js/main.a927a45d.js"
   ]
 }
