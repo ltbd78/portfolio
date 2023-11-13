@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://ltbd78.github.io/portfolio/static/css/main.f8417732.css",
-    "main.js": "https://ltbd78.github.io/portfolio/static/js/main.a927a45d.js",
+    "main.js": "https://ltbd78.github.io/portfolio/static/js/main.ff6ac6ef.js",
     "static/js/496.1ebda612.chunk.js": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js",
     "static/media/Porter Robinson - Shelter (piano).mp3": "https://ltbd78.github.io/portfolio/static/media/Porter Robinson - Shelter (piano).685877a8fa3c24daf2ce.mp3",
     "static/media/POWERS - Sunshine.mp3": "https://ltbd78.github.io/portfolio/static/media/POWERS - Sunshine.3d42e65ac4800807bfa4.mp3",
@@ -28,11 +28,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "https://ltbd78.github.io/portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "https://ltbd78.github.io/portfolio/index.html",
     "main.f8417732.css.map": "https://ltbd78.github.io/portfolio/static/css/main.f8417732.css.map",
-    "main.a927a45d.js.map": "https://ltbd78.github.io/portfolio/static/js/main.a927a45d.js.map",
+    "main.ff6ac6ef.js.map": "https://ltbd78.github.io/portfolio/static/js/main.ff6ac6ef.js.map",
     "496.1ebda612.chunk.js.map": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f8417732.css",
-    "static/js/main.a927a45d.js"
+    "static/js/main.ff6ac6ef.js"
   ]
 }
