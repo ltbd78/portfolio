@@ -7,6 +7,7 @@ import gifPortfolio from "../../assets/portfolio/portfolio.gif";
 import gifRL from "../../assets/portfolio/rl.gif";
 import gifSite from "../../assets/portfolio/site.gif";
 import pngCAE from "../../assets/portfolio/cae.png";
+import pngGPT from "../../assets/portfolio/gpt.png";
 
 function Work({ href, src, title, description, width, height, transform }) {
   // target="_blank" opens link in new tab
@@ -48,6 +49,14 @@ export default function Portfolio() {
         </a>
       </div>
       <div className="works">
+        <Work
+          href={"https://github.com/ltbd78/gpt"}
+          src={pngGPT}
+          title={"GPT"}
+          description={"GPT from scratch in PyTorch and scaled model deployment via Kubeflow on GCP Vertex AI."}
+          width={"100%"}
+          height={"50%"}
+        />
         <Work
           href={"https://github.com/ltbd78/RL"}
           src={gifRL}
