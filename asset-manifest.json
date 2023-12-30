@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://ltbd78.github.io/portfolio/static/css/main.f8417732.css",
-    "main.js": "https://ltbd78.github.io/portfolio/static/js/main.ff6ac6ef.js",
+    "main.js": "https://ltbd78.github.io/portfolio/static/js/main.a0793265.js",
     "static/js/496.1ebda612.chunk.js": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js",
     "static/media/Porter Robinson - Shelter (piano).mp3": "https://ltbd78.github.io/portfolio/static/media/Porter Robinson - Shelter (piano).685877a8fa3c24daf2ce.mp3",
     "static/media/POWERS - Sunshine.mp3": "https://ltbd78.github.io/portfolio/static/media/POWERS - Sunshine.3d42e65ac4800807bfa4.mp3",
@@ -20,6 +20,7 @@
     "static/media/rl.gif": "https://ltbd78.github.io/portfolio/static/media/rl.0eeac066701ecbc02ff2.gif",
     "static/media/portfolio.gif": "https://ltbd78.github.io/portfolio/static/media/portfolio.120c971b37404c817f57.gif",
     "static/media/site.gif": "https://ltbd78.github.io/portfolio/static/media/site.06d90c8be56ee1bc0276.gif",
+    "static/media/gpt.png": "https://ltbd78.github.io/portfolio/static/media/gpt.b1493c8069d0cccc8fed.png",
     "static/media/PressStart2P-Regular.ttf": "https://ltbd78.github.io/portfolio/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
     "static/media/cae.png": "https://ltbd78.github.io/portfolio/static/media/cae.9204c6fbdbebd4b7139b.png",
     "static/media/logo-l.png": "https://ltbd78.github.io/portfolio/static/media/logo-l.d87db72f304db3bc10c6.png",
@@ -28,11 +29,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "https://ltbd78.github.io/portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "https://ltbd78.github.io/portfolio/index.html",
     "main.f8417732.css.map": "https://ltbd78.github.io/portfolio/static/css/main.f8417732.css.map",
-    "main.ff6ac6ef.js.map": "https://ltbd78.github.io/portfolio/static/js/main.ff6ac6ef.js.map",
+    "main.a0793265.js.map": "https://ltbd78.github.io/portfolio/static/js/main.a0793265.js.map",
     "496.1ebda612.chunk.js.map": "https://ltbd78.github.io/portfolio/static/js/496.1ebda612.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f8417732.css",
-    "static/js/main.ff6ac6ef.js"
+    "static/js/main.a0793265.js"
   ]
 }
