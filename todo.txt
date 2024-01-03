@@ -1,8 +1,8 @@
 # High Prio
 - fix hover animation
 - fix CORS issue (try import fonts different way?)
+- fix https (try downloading all imports locally)
 - refactor colors to primary (60%), secondary (30%), accent (10%)
-- make https
 
 # Medium Prio
 - animate L on hover
