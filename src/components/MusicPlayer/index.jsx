@@ -6,23 +6,28 @@ export default function MusicPlayer({ songs }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
 
-  // runs function whenever currentSongIndex updates
+  // when currentSongIndex changes, updates audio.src, plays audio if isPlaying
   useEffect(() => {
     const audio = audioRef.current;
-    audio.pause();
+    // audio.pause();
     audio.src = songs[currentSongIndex]["src"];
     if (isPlaying) {
       audio.play();
     }
   }, [currentSongIndex]);
 
+  // when currentSongIndex changes (and in beginning), listen if audio "ended" and playNext if true
   useEffect(() => {
     const audio = audioRef.current;
     audio.addEventListener("ended", playNext);
     return () => {
-      audio.removeEventListener("ended", playNext); // runs whenever currentSongIndex updates
+      audio.removeEventListener("ended", playNext);
     };
   }, [currentSongIndex]);
+
+  // With an empty dependency array ([]), the effect runs once after the initial render.
+  // Without a dependency array, the effect runs after every render.
+  // With a non-empty dependency array, the effect runs after the initial render and whenever the values in the dependency array change between renders.
 
   function togglePlay() {
     const audio = audioRef.current;
