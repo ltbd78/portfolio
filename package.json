@@ -33,7 +33,7 @@
     "build": "react-scripts build --entry ./src/index.jsx",
     "deploy": "npx gh-pages -b gh-pages -d build --dotfiles",
     "eject": "react-scripts eject",
-    "postbuild": "copy CNAME build\\CNAME",
+    "postbuild": "cp CNAME build/CNAME",
     "predeploy": "npm run build",
     "prettier": "npx prettier --write ./src ./public",
     "serve": "npx serve -s build",
