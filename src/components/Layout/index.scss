@@ -14,6 +14,10 @@
   }
   @media screen and (orientation: portrait) {
     flex-direction: column;
+    .page {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
   }
   .wheel-and-hamster {
     --dur: 1s;
