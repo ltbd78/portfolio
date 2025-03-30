@@ -11,14 +11,18 @@ export default function AnimatedLetters({ string, initialClass, delay, hoverClas
       <span
         key={char + i}
         onMouseEnter={() => {
-          const newArray = [...wasHovered];
-          newArray[i] = true;
-          setWasHovered(newArray);
+          if (hoverClass !== "") {
+            const newArray = [...wasHovered];
+            newArray[i] = true;
+            setWasHovered(newArray);
+          }
         }}
         onAnimationEnd={() => {
-          const newArray = [...wasHovered];
-          newArray[i] = false;
-          setWasHovered(newArray);
+          if (hoverClass !== "") {
+            const newArray = [...wasHovered];
+            newArray[i] = false;
+            setWasHovered(newArray);
+          }
         }}
         className={"animated-letter" + initialClass_ + hoverClass_}
       >

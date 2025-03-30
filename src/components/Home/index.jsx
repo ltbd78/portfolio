@@ -7,8 +7,8 @@ import pngLogo from "../../assets/images/logo-l.png";
 export default function Home() {
   const [initialClass, setInitialClass] = useState("initial-animation");
   const [hoverClass, setHoverClass] = useState("");
-  setTimeout(() => setInitialClass(""), 4000);
-  setTimeout(() => setHoverClass("hover-animation"), 4000);
+  setTimeout(() => setInitialClass(""), 5100);
+  setTimeout(() => setHoverClass("hover-animation"), 5100);
   return (
     <>
       <article className="home-page">
@@ -19,7 +19,7 @@ export default function Home() {
           <img src={pngLogo} alt="logo" />
           <AnimatedLetters string={"insu Han"} initialClass={initialClass} delay={16} hoverClass={hoverClass} />
           <br />
-          <AnimatedLetters string={"Data Scientist"} initialClass={initialClass} delay={24} hoverClass={hoverClass} />
+          <AnimatedLetters string={"Applied Scientist"} initialClass={initialClass} delay={24} hoverClass={hoverClass} />
         </h1>
         <h2>Machine Learning Engineer / Statistician</h2>
         <Link to="/contact" className="contact-button">
