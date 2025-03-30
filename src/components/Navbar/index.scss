@@ -5,6 +5,8 @@
     flex-direction: column;
     justify-content: space-between;
     width: var(--navbar-size); /* also limits size of items inside */
+    position: fixed; /* Fix the navbar position to be constant between components */
+    height: 100vh; /* Make it full height */
     svg {
       color: var(--secondary-color);
       height: calc(var(--navbar-size) / 2); /* width doesn't scale well and % changes */

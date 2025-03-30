@@ -8,6 +8,9 @@
   // width: 100svw; /* don't set or messes up body default margin */
   @media screen and (orientation: landscape) {
     flex-direction: row;
+    .page {
+      padding-left: calc(var(--navbar-size) + 3rem); /* Add padding to accommodate fixed navbar */
+    }
   }
   @media screen and (orientation: portrait) {
     flex-direction: column;
@@ -69,8 +72,6 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-left: var(--navbar-size);
-      margin-right: var(--navbar-size);
       max-width: var(--max-article-width);
       z-index: 0; /* must be at least 0 to be above parent containers */
     }
